@@ -17,12 +17,7 @@ export default function Projects() {
               key={item}
             >
               <div className="relative aspect-video">
-                <Image
-                  src="/background.webp"
-                  alt="test"
-                  fill
-                  objectFit="cover"
-                />
+                <Image src="/bg-1.jpg" alt="test" fill objectFit="cover" />
               </div>
               <div className="p-8 space-y-8">
                 <h3 className="text-lg font-medium text-gray-900">
