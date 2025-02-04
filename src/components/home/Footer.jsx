@@ -8,9 +8,12 @@ export default function Footer2() {
       <div className="px-4 sm:px-6 md:px-8 pt-16 pb-4 mx-auto max-w-6xl">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
-            <div className="flex justify-center text-white sm:justify-start">
-              <Image src="/logo2.png" alt="Ummati" width={100} height={100} />
-            </div>
+            <Link
+              href="/"
+              className="flex justify-center text-white sm:justify-start"
+            >
+              <Image src="/logo-2.webp" alt="Ummati" width={100} height={100} />
+            </Link>
 
             <p className="mt-6 max-w-md text-center leading-relaxed text-gray-100 sm:max-w-xs sm:text-left">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
