@@ -15,7 +15,7 @@ export default function Hero() {
           Contribute to building a better future for the nation
         </p>
         <Link
-          href="/"
+          href="/donate"
           className="px-6 py-3 bg-main hover:bg-main-light text-white duration-300 font-semibold rounded-lg shadow-lg"
         >
           Donate now

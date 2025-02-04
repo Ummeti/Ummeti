@@ -6,7 +6,7 @@ export default function Statistics() {
   ];
 
   return (
-    <section className="p-4">
+    <section className="p-4 sm:px-6 md:px-8">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center rounded-lg shadow-sm bg-second-lightest overflow-hidden">
         {stats.map((stat, idx) => (
           <div key={idx} className="flex-1 p-8 text-center">

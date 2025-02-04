@@ -5,11 +5,11 @@ import React from 'react';
 export default function Projects() {
   const repeat = [0, 1, 2];
   return (
-    <div className="mt-20">
+    <div className="pt-20">
       <h2 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
         Our projects
       </h2>
-      <div className="px-4 sm:px-6 md:px-8 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-16">
+      <div className="px-4 sm:px-6 md:px-8 max-w-6xl mx-auto mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {repeat.map((item) => {
           return (
             <div
@@ -40,7 +40,7 @@ export default function Projects() {
                   </div>
                 </div>
                 <Link
-                  href="/"
+                  href="/donate"
                   className="block w-fit rounded-lg px-4 py-2 uppercase bg-main hover:bg-main-light duration-300 text-white font-bold"
                 >
                   Donate
