@@ -9,7 +9,7 @@ export default function Footer2() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex justify-center text-white sm:justify-start">
-              <Image src="/logo-2.png" alt="Ummati" width={100} height={100} />
+              <Image src="/logo2.png" alt="Ummati" width={100} height={100} />
             </div>
 
             <p className="mt-6 max-w-md text-center leading-relaxed text-gray-100 sm:max-w-xs sm:text-left">
