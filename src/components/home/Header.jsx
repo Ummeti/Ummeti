@@ -15,7 +15,7 @@ export default function Header() {
     { label: 'Projects', href: '/' },
     { label: 'Emergency', href: '/' },
     { label: 'Volunteer Now', href: '/' },
-    { label: 'Contact', href: '/' },
+    { label: 'Contact', href: '/contact' },
   ];
 
   return (

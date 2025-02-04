@@ -21,7 +21,7 @@ export default function DonationForm() {
   };
 
   return (
-    <section className="grid grid-cols-1 md:grid-cols-5 max-w-7xl mx-auto shadow-lg">
+    <section className="grid grid-cols-1 md:grid-cols-5 max-w-6xl mx-auto shadow-lg">
       <div className="bg-white md:col-span-3 p-4 sm:p-6 md:p-12">
         <Breadcrumb />
         <div className="relative aspect-video rounded-lg overflow-hidden mt-4">
@@ -121,7 +121,7 @@ export default function DonationForm() {
               Amount to donate
             </label>
             <div className="grid grid-cols-2 gap-4">
-              {[10, 25, 50].map((amount) => (
+              {[50, 250, 500].map((amount) => (
                 <button
                   key={amount}
                   type="button"
