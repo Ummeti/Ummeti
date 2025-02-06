@@ -1,4 +1,6 @@
 import Breadcrumb from '@/components/widgets/Breadcrumb';
+import ContactInfo from '@/components/widgets/ContactInfo';
+import Socials from '@/components/widgets/Socials';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -15,7 +17,6 @@ export default function Contact() {
             needs of your audience early and often.
           </p>
         </div>
-
         <div className="bg-gray-100 p-8 md:p-12 rounded-lg shadow-lg w-full max-w-3xl">
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -80,6 +81,8 @@ export default function Contact() {
             </button>
           </form>
         </div>
+        <ContactInfo color="text-gray-900" />
+        <Socials color="text-gray-900" />
       </div>
     </section>
   );
