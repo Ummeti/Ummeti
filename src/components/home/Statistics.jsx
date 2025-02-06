@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Statistics() {
   const stats = [
     { label: 'Projects', value: 150 },
@@ -18,9 +20,9 @@ export default function Statistics() {
         <div className="flex-1 p-8 text-center bg-main text-white">
           <h3 className="text-xl font-semibold">Be Part of the Change</h3>
           <p className="mt-2">
-            <a href="#" className="text-white underline">
+            <Link href="/#volunteer" className="text-white underline">
               become volunteer
-            </a>
+            </Link>
             <span className="text-white">→</span>
           </p>
         </div>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <section className="relative h-[calc(100vh-314px)]">
-      <div className="absolute inset-0 bg-cover bg-center bg-[url(/bg.jpg)]"></div>
+      <div className="absolute inset-0 bg-cover bg-center bg-[url(/bg-1.jpg)] bg-fixed"></div>
 
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 

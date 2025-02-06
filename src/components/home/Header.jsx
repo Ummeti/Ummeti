@@ -13,13 +13,12 @@ export default function Header() {
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
     { label: 'Projects', href: '/' },
-    { label: 'Emergency', href: '/' },
-    { label: 'Volunteer Now', href: '/' },
+    { label: 'Volunteer Now', href: '/#volunteer' },
     { label: 'Contact', href: '/contact' },
   ];
 
   return (
-    <header className="shadow-2xl">
+    <header className="bg-white sticky z-50 shadow-2xl">
       <div className="px-4 sm:px-6 md:px-8 mx-auto max-w-6xl h-32 flex items-center justify-between">
         <Link href="/">
           <Image

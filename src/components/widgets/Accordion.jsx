@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Accordion({ title, description }) {
   return (
-    <details className="group [&_summary::-webkit-details-marker]:hidden" open>
+    <details className="group [&_summary::-webkit-details-marker]:hidden">
       <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-second-lightest p-4 text-gray-900">
         <h2 className="font-medium">{title}</h2>
 
