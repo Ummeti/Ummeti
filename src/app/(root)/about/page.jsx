@@ -57,7 +57,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="mt-20">
+      <div className="mt-8">
         <div className="grid md:grid-cols-2 gap-8 grid-flow-dense">
           <div className="order-1 md:order-none">
             <div>
