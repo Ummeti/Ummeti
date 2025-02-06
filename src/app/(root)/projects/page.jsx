@@ -4,35 +4,35 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 export default function Projects() {
-  const categories = ['Web Development', 'Design', 'Marketing', 'Finance'];
+  const categories = ['Food aid', 'Orphans', 'Medical aid', 'Urgent'];
   const projects = [
     {
       id: 1,
       title: 'Project A',
-      category: 'Web Development',
+      category: 'Food aid',
       image: '/bg-1.jpg',
-      description: 'A web development project.',
+      description: 'A Food aid project.',
     },
     {
       id: 2,
       title: 'Project B',
-      category: 'Design',
-      image: 'https://via.placeholder.com/150',
-      description: 'A design project.',
+      category: 'Orphans',
+      image: '/bg-2.jpg',
+      description: 'A Orphans project.',
     },
     {
       id: 3,
       title: 'Project C',
-      category: 'Marketing',
-      image: 'https://via.placeholder.com/150',
-      description: 'A marketing project.',
+      category: 'Medical aid',
+      image: '/bg-3.jpg',
+      description: 'A Medical aid project.',
     },
     {
       id: 4,
       title: 'Project C',
-      category: 'Marketing',
-      image: 'https://via.placeholder.com/150',
-      description: 'A marketing project.',
+      category: 'Urgent',
+      image: '/bg-4.jpg',
+      description: 'A Urgent project.',
     },
   ];
 
@@ -86,7 +86,7 @@ export default function Projects() {
                     {project.title}
                   </h6>
                   <h6 className="font-semibold text-xl leading-8 text-indigo-600">
-                    $100
+                    0
                   </h6>
                 </div>
                 <p className="mt-2 font-normal text-sm leading-6 text-gray-500">

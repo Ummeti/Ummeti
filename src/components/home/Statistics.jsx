@@ -1,6 +1,5 @@
 'use client';
-
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
@@ -21,7 +20,7 @@ export default function Statistics() {
           <motion.h3
             className="text-xl font-semibold"
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
           >
             Be Part of the Change
@@ -29,7 +28,7 @@ export default function Statistics() {
           <motion.p
             className="mt-2"
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
           >
             <Link href="/#volunteer" className="text-white underline">
@@ -45,56 +44,26 @@ export default function Statistics() {
 
 function StatCard({ label, value }) {
   const [count, setCount] = useState(0);
-  const [inView, setInView] = useState(false);
-  const statRef = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setInView(true);
+    const interval = setInterval(() => {
+      setCount((prev) => {
+        if (prev >= value) {
+          clearInterval(interval);
+          return value;
         }
-      },
-      { threshold: 0.5 }
-    );
+        return prev + Math.ceil(value / 50); // Adjust speed of count-up
+      });
+    }, 30); // Adjust timing for smoother/faster count-up
 
-    if (statRef.current) {
-      observer.observe(statRef.current);
-    }
-
-    return () => {
-      if (statRef.current) {
-        observer.unobserve(statRef.current);
-      }
-    };
-  }, []);
-
-  useEffect(() => {
-    if (inView) {
-      let start = 0;
-      const duration = 2000;
-      const increment = value / (duration / 16);
-
-      const counter = setInterval(() => {
-        start += increment;
-        if (start >= value) {
-          clearInterval(counter);
-          setCount(value);
-        } else {
-          setCount(Math.ceil(start));
-        }
-      }, 16);
-
-      return () => clearInterval(counter);
-    }
-  }, [inView, value]);
+    return () => clearInterval(interval);
+  }, [value]);
 
   return (
     <motion.div
-      ref={statRef}
       className="flex-1 p-8 text-center"
       initial={{ opacity: 0, y: 50 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
+      whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
     >
       <h2 className="text-4xl font-bold text-main">{count}</h2>
