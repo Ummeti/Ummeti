@@ -1,13 +1,36 @@
-import Link from 'next/link';
+'use client';
 import React from 'react';
+import { motion } from 'framer-motion';
 import ContactInfo from '../widgets/ContactInfo';
 import Socials from '../widgets/Socials';
 
 export default function Contact() {
   return (
-    <div className="mt-20 bg-second rounded-lg" id="volunteer">
-      <div className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 font-[sans-serif] max-w-6xl max-lg:max-w-3xl mx-auto">
-        <div>
+    <motion.div
+      className="mt-20 bg-second rounded-lg"
+      id="volunteer"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+    >
+      <motion.div
+        className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 font-[sans-serif] max-w-6xl max-lg:max-w-3xl mx-auto"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={{
+          visible: {
+            opacity: 1,
+            transition: { staggerChildren: 0.3 },
+          },
+          hidden: { opacity: 0 },
+        }}
+      >
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+        >
           <h1 className="text-4xl font-bold text-gray-900">Volunteer Now</h1>
           <p className="text-sm text-gray-600 mt-4 leading-relaxed">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet,
@@ -17,9 +40,14 @@ export default function Contact() {
           </p>
           <ContactInfo color="text-gray-900" />
           <Socials color="text-gray-900" />
-        </div>
+        </motion.div>
 
-        <div className="bg-gray-100 p-6 rounded-lg">
+        <motion.div
+          className="bg-gray-100 p-6 rounded-lg"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
+        >
           <form className="mt-8 space-y-4">
             <input
               type="text"
@@ -41,9 +69,11 @@ export default function Contact() {
               rows="6"
               className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 outline-second"
             ></textarea>
-            <button
+            <motion.button
               type="button"
               className="text-gray-900 bg-second hover:bg-second-light tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full !mt-6"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,10 +91,10 @@ export default function Contact() {
                 />
               </svg>
               Send Message
-            </button>
+            </motion.button>
           </form>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }

@@ -1,3 +1,5 @@
+'use client';
+import { motion } from 'framer-motion';
 import Accordion from '@/components/widgets/Accordion';
 import Image from 'next/image';
 
@@ -39,10 +41,20 @@ export default function About() {
   ];
 
   return (
-    <section className="pt-24 bg-white">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="pt-24 bg-white"
+    >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="md:grid grid-cols-5 items-start">
-          <div className="col-span-3 space-y-4 p-4 sm:px-6 md:px-8 py-6">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="col-span-3 space-y-4 p-4 sm:px-6 md:px-8 py-6"
+          >
             <h2 className="text-black font-manrope text-4xl font-semibold leading-10 md:text-left text-center">
               Who are we?
             </h2>
@@ -52,23 +64,47 @@ export default function About() {
               Brought together by shared interests, we are united by a vision to
               make a positive impact on society.
             </p>
-            <div className="relative aspect-video flex md:items-center md:justify-start justify-center rounded-lg overflow-hidden">
+            <motion.div
+              initial={{ opacity: 0, x: -240 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.3 }}
+              className="relative aspect-video flex md:items-center md:justify-start justify-center rounded-lg overflow-hidden"
+            >
               <Image src="/bg.jpg" alt="" fill objectFit="cover" />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
           <div className="border-l-2 md:border-second border-white p-4 sm:px-6 md:px-8 py-6 col-span-2">
-            <div className="space-y-4">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              variants={{
+                hidden: { opacity: 0, y: 30 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { staggerChildren: 0.2 },
+                },
+              }}
+              className="space-y-4"
+            >
               {goals.map((goal, index) => (
-                <Accordion
+                <motion.div
                   key={index}
-                  title={goal.title}
-                  description={goal.description}
-                />
+                  variants={{
+                    hidden: { opacity: 0, y: 30 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                >
+                  <Accordion
+                    title={goal.title}
+                    description={goal.description}
+                  />
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
