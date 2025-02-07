@@ -45,15 +45,16 @@ export default function Projects() {
             <div className="relative aspect-video">
               <Image className="object-cover" src="/bg-1.jpg" alt="test" fill />
             </div>
-            <div className="p-8 space-y-8">
+            <div className="p-4 space-y-2">
               <h3 className="text-lg font-medium text-gray-900">
                 Lorem ipsum dolor sit.
               </h3>
               <p className="text-gray-700">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quisquam, veniam.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Deleniti dignissimos, tempora animi adipisci vitae corrupti
+                numquam quisquam eum perspiciatis rerum?
               </p>
-              <div className="space-y-4">
+              <div className="space-y-2">
                 <div className="text-gray-900 flex justify-between">
                   <span className="font-bold">$7,500</span>
                   <span className="font-medium text-gray-600 uppercase">
