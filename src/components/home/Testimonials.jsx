@@ -127,6 +127,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Rate from '../widgets/Rate';
+import EmblaCarousel from '../widgets/carousel/EmblaCarousel';
 
 export default function Testimonials() {
   return (
@@ -140,24 +141,28 @@ export default function Testimonials() {
         <h2 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
           What people say about Ummati
         </h2>
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[...Array(9)].map((_, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-            >
-              <blockquote className="rounded-lg bg-second-lightest p-6 shadow-sm sm:p-8">
-                <Rate />
-                <p className="mt-4 text-gray-700">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Similique quae consequatur quia labore minus accusamus
-                  exercitationem ipsam voluptates fuga officia?
-                </p>
-              </blockquote>
-            </motion.div>
-          ))}
+        <div className="mt-8">
+          <EmblaCarousel>
+            {[...Array(9)].map((_, i) => (
+              <div key={i} className="embla__slide">
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: i * 0.1 }}
+                >
+                  <blockquote className="rounded-lg bg-second-lightest p-6 shadow-sm sm:p-8">
+                    <Rate />
+                    <p className="mt-4 text-gray-700">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Similique quae consequatur quia labore minus accusamus
+                      exercitationem ipsam voluptates fuga officia?
+                    </p>
+                  </blockquote>
+                </motion.div>
+              </div>
+            ))}
+          </EmblaCarousel>
         </div>
       </div>
     </motion.section>

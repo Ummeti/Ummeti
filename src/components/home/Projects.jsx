@@ -34,8 +34,7 @@ export default function Projects() {
           {repeat.map((item) => (
             <div key={item} className="embla__slide">
               <motion.div
-                className="bg-second-lightest rounded-lg shadow-sm overflow-hidden"
-                key={item}
+                className="bg-second-lightest h-full rounded-lg shadow-sm overflow-hidden"
                 variants={{
                   hidden: { opacity: 0, y: 50 },
                   visible: {
