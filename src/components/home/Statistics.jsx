@@ -52,9 +52,9 @@ function StatCard({ label, value }) {
           clearInterval(interval);
           return value;
         }
-        return prev + Math.ceil(value / 50); // Adjust speed of count-up
+        return prev + Math.ceil(value / 50);
       });
-    }, 30); // Adjust timing for smoother/faster count-up
+    }, 30);
 
     return () => clearInterval(interval);
   }, [value]);

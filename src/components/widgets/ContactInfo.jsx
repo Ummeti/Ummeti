@@ -6,7 +6,7 @@ export default function ContactInfo({ color }) {
       <li>
         <Link
           className="flex items-center gap-2 ltr:sm:justify-start rtl:sm:justify-end"
-          href="#"
+          href="mailto:info@example.com"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ export default function ContactInfo({ color }) {
       <li>
         <Link
           className="flex items-center gap-2 ltr:sm:justify-start rtl:sm:justify-end"
-          href="#"
+          href="tel:+90"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

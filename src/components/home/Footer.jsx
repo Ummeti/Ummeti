@@ -17,8 +17,8 @@ export default function Footer2() {
               <Image src="/logo-2.webp" alt="Ummati" width={100} height={100} />
             </Link>
             <p className="mt-6 max-w-md text-center leading-relaxed text-gray-100 sm:max-w-xs sm:text-left">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-              consequuntur amet culpa cum itaque neque.
+              Ummati is a global organization aimed at supporting the issues of
+              the Islamic nation and advocating for the Palestinian cause.
             </p>
             <Socials color="text-white" />
           </div>
@@ -40,7 +40,7 @@ export default function Footer2() {
                 <li>
                   <Link
                     className="text-white transition hover:text-white/75"
-                    href="#"
+                    href="/#volunteer"
                   >
                     Volenteer Now
                   </Link>
@@ -56,7 +56,7 @@ export default function Footer2() {
                 <li>
                   <Link
                     className="text-white transition hover:text-white/75"
-                    href="#"
+                    href="/projects"
                   >
                     Projects
                   </Link>
@@ -113,7 +113,7 @@ export default function Footer2() {
                 <li>
                   <Link
                     className="text-white transition hover:text-white/75"
-                    href="#"
+                    href="/contact"
                   >
                     Contact
                   </Link>
@@ -122,7 +122,7 @@ export default function Footer2() {
                 <li>
                   <Link
                     className="text-white transition hover:text-white/75"
-                    href="#"
+                    href="/projects"
                   >
                     Projects
                   </Link>

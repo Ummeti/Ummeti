@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import ContactInfo from '../widgets/ContactInfo';
 import Socials from '../widgets/Socials';
 
-export default function Contact() {
+export default function Volunteer() {
   return (
     <motion.div
       className="mt-20 bg-second rounded-lg"
@@ -27,7 +27,7 @@ export default function Contact() {
         }}
       >
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
@@ -44,7 +44,7 @@ export default function Contact() {
 
         <motion.div
           className="bg-gray-100 p-6 rounded-lg"
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
         >
@@ -72,7 +72,6 @@ export default function Contact() {
             <motion.button
               type="button"
               className="text-gray-900 bg-second hover:bg-second-light tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full !mt-6"
-              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               <svg
