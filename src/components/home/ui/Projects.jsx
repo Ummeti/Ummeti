@@ -1,5 +1,4 @@
 'use client';
-export const dynamic = 'force-dynamic';
 import EmblaCarousel from '@/components/widgets/carousel/EmblaCarousel';
 import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
