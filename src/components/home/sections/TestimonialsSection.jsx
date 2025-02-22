@@ -126,13 +126,13 @@
 // }
 'use client';
 import { motion } from 'framer-motion';
-import Rate from '../widgets/Rate';
-import EmblaCarousel from '../widgets/carousel/EmblaCarousel';
+import Rate from '../../widgets/Rate';
+import EmblaCarousel from '../../widgets/carousel/EmblaCarousel';
 
-export default function Testimonials() {
+export default function TestimonialsSection() {
   return (
     <motion.section
-      className="bg-white py-20"
+      className="bg-white mt-20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}

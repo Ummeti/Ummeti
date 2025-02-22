@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-export default function Hero() {
+export default function HeroSection() {
   return (
     <section className="relative h-[calc(100vh-314px)]">
       <div className="absolute inset-0 bg-cover bg-center bg-[url(/bg-1.jpg)] bg-fixed"></div>

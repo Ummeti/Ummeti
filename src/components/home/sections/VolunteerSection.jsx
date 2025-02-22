@@ -1,10 +1,23 @@
 'use client';
-import React from 'react';
-import { motion } from 'framer-motion';
-import ContactInfo from '../widgets/ContactInfo';
-import Socials from '../widgets/Socials';
 
-export default function Volunteer() {
+import { useActionState } from 'react';
+import { sendEmailAction } from '@/app/actions/sendEmail';
+import ContactInfo from '../../widgets/ContactInfo';
+import Socials from '../../widgets/Socials';
+import { motion } from 'framer-motion';
+
+export default function VolunteerSection() {
+  const initialState = {
+    success: false,
+    message: '',
+    errors: {},
+  };
+
+  const [state, formAction, isPending] = useActionState(
+    sendEmailAction,
+    initialState
+  );
+
   return (
     <motion.div
       className="mt-20 bg-second rounded-lg"
@@ -48,31 +61,56 @@ export default function Volunteer() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
         >
-          <form className="mt-8 space-y-4">
+          <form action={formAction} className="mt-8 space-y-4" noValidate>
             <input
               type="text"
+              name="name"
               placeholder="Name"
               className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-second"
+              defaultValue={state.formObject?.name}
             />
-            <input
-              type="email"
-              placeholder="Email"
-              className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-second"
-            />
+            {state.errors?.name && (
+              <p className="text-red-500 text-sm">{state.errors.name}</p>
+            )}
+
             <input
               type="text"
+              name="subject"
               placeholder="Subject"
               className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-second"
+              defaultValue={state.formObject?.subject}
             />
+            {state.errors?.subject && (
+              <p className="text-red-500 text-sm">{state.errors.subject}</p>
+            )}
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-second"
+              defaultValue={state.formObject?.email}
+            />
+            {state.errors?.email && (
+              <p className="text-red-500 text-sm">{state.errors.email}</p>
+            )}
+
             <textarea
+              name="message"
               placeholder="Message"
               rows="6"
               className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 outline-second"
+              defaultValue={state.formObject?.message}
             ></textarea>
+            {state.errors?.message && (
+              <p className="text-red-500 text-sm">{state.errors.message}</p>
+            )}
+
             <motion.button
-              type="button"
-              className="text-gray-900 bg-second hover:bg-second-light tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full !mt-6"
+              type="submit"
+              className="text-gray-900 bg-second hover:bg-second-light tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full !mt-6 disabled:bg-second-lightest"
               whileTap={{ scale: 0.95 }}
+              disabled={isPending}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -89,8 +127,18 @@ export default function Volunteer() {
                   data-original="#000000"
                 />
               </svg>
-              Send Message
+              {isPending ? 'Sending...' : 'Send Message'}
             </motion.button>
+
+            {state.message && (
+              <p
+                className={`text-sm mt-4 ${
+                  state.success ? 'text-green-600' : 'text-red-600'
+                }`}
+              >
+                {state.message}
+              </p>
+            )}
           </form>
         </motion.div>
       </motion.div>

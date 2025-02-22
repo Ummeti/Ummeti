@@ -4,10 +4,10 @@ import React from 'react';
 import Socials from '../widgets/Socials';
 import ContactInfo from '../widgets/ContactInfo';
 
-export default function Footer2() {
+export default function Footer() {
   return (
     <footer className="bg-main">
-      <div className="px-4 sm:px-6 md:px-8 pt-16 pb-4 mx-auto max-w-6xl">
+      <div className="px-4 sm:px-6 md:px-8 pt-16 mt-20 pb-4 mx-auto max-w-6xl">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <Link

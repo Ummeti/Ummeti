@@ -2,8 +2,11 @@ import React from 'react';
 
 export default function Boxes() {
   return (
-    <div className="grid grid-cols-3 gap-8 max-w-6xl px-4 md:px-6 lg:px-8 mx-auto py-20">
-      <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg max-w-sm">
+    <div
+      className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl px-4 md:px-6 lg:px-8 mx-auto mt-20"
+      id="blog"
+    >
+      <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
         <img
           alt=""
           src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"

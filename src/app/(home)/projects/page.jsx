@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Breadcrumb from '@/components/widgets/Breadcrumb';
 
 export default function Projects() {
   const categories = ['Food aid', 'Orphans', 'Medical aid', 'Urgent'];
@@ -44,8 +45,9 @@ export default function Projects() {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="p-6 max-w-6xl mx-auto">
-      <h1 className="text-3xl font-bold text-center mb-6">Projects</h1>
+    <div className="px-4 sm:px-6 md:px-8 max-w-6xl mx-auto mt-20">
+      <Breadcrumb />
+      <h1 className="text-3xl font-bold text-center mb-6 mt-4">Projects</h1>
       <div className="flex justify-center gap-3 mb-6 flex-wrap">
         {['All', ...categories].map((category) => (
           <button

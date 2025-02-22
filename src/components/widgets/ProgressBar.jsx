@@ -1,0 +1,26 @@
+import { motion } from 'framer-motion';
+
+export default function ProgressBar({ raised, goal }) {
+  const progressPercentage = Math.round((raised / goal) * 100);
+  return (
+    <div className="space-y-2">
+      <div className="text-gray-900 flex justify-between">
+        <span className="font-bold">${raised}</span>
+        <span className="font-medium text-gray-600 uppercase">
+          ${goal} goal
+        </span>
+      </div>
+      <div className="bg-main-lightest relative h-4 rounded-lg">
+        <motion.div
+          className="bg-main h-4 rounded-lg"
+          initial={{ width: 0 }}
+          whileInView={{ width: `${progressPercentage}%` }}
+          transition={{ duration: 1, ease: 'easeOut' }}
+        ></motion.div>
+        <div className="absolute right-0 font-semibold">
+          {progressPercentage}%
+        </div>
+      </div>
+    </div>
+  );
+}

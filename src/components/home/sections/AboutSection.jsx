@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Accordion from '@/components/widgets/Accordion';
 import Image from 'next/image';
 
-export default function About() {
+export default function AboutSection() {
   const goals = [
     {
       title: 'Our Vision',
@@ -45,7 +45,7 @@ export default function About() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="pt-24 bg-white"
+      className="mt-20 bg-white"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="md:grid grid-cols-5 items-start">

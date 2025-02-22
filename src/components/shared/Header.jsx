@@ -13,7 +13,7 @@ export default function Header() {
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
     { label: 'Projects', href: '/projects' },
-    { label: 'Volunteer Now', href: '/#volunteer' },
+    { label: 'Blog', href: '/#blog' },
     { label: 'Contact', href: '/contact' },
   ];
 
@@ -22,7 +22,7 @@ export default function Header() {
       <div className="px-4 sm:px-6 md:px-8 mx-auto max-w-6xl h-32 flex items-center justify-between">
         <Link href="/">
           <Image
-            src="/Logo.png"
+            src="/logo.png"
             alt="Ummati"
             width={100}
             height={100}

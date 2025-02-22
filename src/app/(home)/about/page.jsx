@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function About() {
   return (
     <motion.section
-      className="px-4 sm:px-6 md:px-8 mx-auto py-20 max-w-6xl"
+      className="px-4 sm:px-6 md:px-8 mx-auto mt-20 max-w-6xl"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
