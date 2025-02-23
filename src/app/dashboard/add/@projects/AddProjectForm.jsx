@@ -2,10 +2,10 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { RemoveIcon, UploadIcon } from './Icons';
-import { addProjectAction } from '../actions/projectActions';
+import { addProjectAction } from '@/app/actions/projectActions';
+import { RemoveIcon, UploadIcon } from '../../ui/Icons';
 
-export default function ImageUploadForm() {
+export default function AddProjectForm({ categories }) {
   const [images, setImages] = useState([]);
   const [showNewCategoryInput, setShowNewCategoryInput] = useState(false);
 
@@ -35,7 +35,7 @@ export default function ImageUploadForm() {
         type="text"
         name="title"
         placeholder="Title"
-        className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm border border-gray-300 focus:ring-2 focus:ring-main focus:outline-none"
         required
         aria-label="Fundraiser Title"
       />
@@ -43,7 +43,7 @@ export default function ImageUploadForm() {
         name="description"
         placeholder="Description"
         rows="4"
-        className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 border border-gray-300 focus:ring-2 focus:ring-main focus:outline-none"
         required
         aria-label="Fundraiser Description"
       />
@@ -54,8 +54,8 @@ export default function ImageUploadForm() {
         </label>
         <div className="flex flex-col space-y-2">
           <select
-            name="category" // Only this will be sent if the user selects a category
-            className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            name="category"
+            className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm border border-gray-300 focus:ring-2 focus:ring-main focus:outline-none"
             aria-label="Choose Category"
             onChange={(e) => setShowNewCategoryInput(e.target.value === '')}
             defaultValue="select"
@@ -63,22 +63,20 @@ export default function ImageUploadForm() {
             <option value="select" disabled>
               Select a category
             </option>
-            {/* List of existing categories */}
-            <option value="Health">Health</option>
-            <option value="Education">Education</option>
-            <option value="Charity">Charity</option>
-            <option value="Environment">Environment</option>
-            <option value="">New Category</option>
-            {/* New category option */}
+            {categories?.map((category) => (
+              <option key={category.id} value={category.name}>
+                {category.name}
+              </option>
+            ))}
+            <option value="">New category</option>
           </select>
 
-          {/* Option to create a new category */}
           {showNewCategoryInput && (
             <input
               type="text"
               name="newCategory"
               placeholder="Enter new category"
-              className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none mt-2"
+              className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm border border-gray-300 focus:ring-2 focus:ring-main focus:outline-none mt-2"
               aria-label="New Category"
             />
           )}
@@ -89,7 +87,7 @@ export default function ImageUploadForm() {
         type="number"
         name="raised"
         placeholder="Amount Raised ($)"
-        className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm border border-gray-300 focus:ring-2 focus:ring-main focus:outline-none"
         required
         aria-label="Amount Raised"
       />
@@ -97,7 +95,7 @@ export default function ImageUploadForm() {
         type="number"
         name="goal"
         placeholder="Goal Amount ($)"
-        className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm border border-gray-300 focus:ring-2 focus:ring-main focus:outline-none"
         required
         aria-label="Fundraising Goal"
       />
@@ -119,7 +117,7 @@ export default function ImageUploadForm() {
           <UploadIcon />
           <span>Drop files here</span>
           <span className="text-gray-500 text-xs">or</span>
-          <span className="text-blue-600 font-semibold">Browse</span>
+          <span className="text-main font-semibold">Browse</span>
         </label>
       </div>
 
@@ -152,7 +150,7 @@ export default function ImageUploadForm() {
 
       <motion.button
         type="submit"
-        className="text-white bg-blue-600 hover:bg-blue-700 tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full !mt-6 disabled:bg-gray-400"
+        className="text-white bg-main hover:bg-main-lighter tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full !mt-6 disabled:bg-gray-400"
         whileTap={{ scale: 0.95 }}
       >
         Submit

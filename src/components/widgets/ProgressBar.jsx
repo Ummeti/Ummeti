@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 export default function ProgressBar({ raised, goal }) {
-  const progressPercentage = Math.round((raised / goal) * 100);
+  const progressPercentage = Math.min(Math.round((raised / goal) * 100), 100);
   return (
     <div className="space-y-2">
       <div className="text-gray-900 flex justify-between">

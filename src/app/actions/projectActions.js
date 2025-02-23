@@ -6,8 +6,6 @@ import { revalidatePath } from 'next/cache';
 export async function addProjectAction(formData) {
   const category = formData.get('newCategory') || formData.get('category');
 
-  console.log(category);
-
   if (!category) return;
 
   const newCategory = await prisma.category.create({
@@ -37,6 +35,7 @@ export async function addProjectAction(formData) {
     },
   });
   console.log(project);
+  revalidatePath('/dashboard');
 }
 
 export async function removeProjectAction(id) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { RemoveIcon } from './Icons';
+import { RemoveIcon } from './ui/Icons';
 
 export default function Items() {
   return (
