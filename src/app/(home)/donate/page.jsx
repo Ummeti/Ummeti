@@ -26,7 +26,7 @@ export default function DonationForm() {
       <div className="grid grid-cols-1 md:grid-cols-5 mt-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
         <div className="bg-white md:col-span-3 p-4 sm:p-6 md:p-12">
           <div className="relative aspect-video rounded-lg overflow-hidden mt-4">
-            <Image src="/bg-1.jpg" alt="test" fill objectFit="cover" />
+            <Image src="/bg-1.jpg" alt="test" fill className="object-cover" />
           </div>
           <div className="space-y-4 mt-4">
             <h3 className="text-base font-medium text-gray-900">

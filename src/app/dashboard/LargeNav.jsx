@@ -5,7 +5,7 @@ export default function LargeNav() {
   return (
     <div className="hidden md:flex flex-col items-center w-40 h-full overflow-hidden text-gray-700">
       <Link className="flex items-center w-full p-2" href="/dashboard">
-        <Image src="/logo.png" alt="Ummati" width={52} height={52} />
+        <Image src="/logo.webp" alt="Ummati" width={52} height={52} />
         <span className="ml-2 text-sm font-bold">Ummati</span>
       </Link>
       <ul className="flex flex-col justify-center w-full px-2 space-y-1 border-t border-gray-200">

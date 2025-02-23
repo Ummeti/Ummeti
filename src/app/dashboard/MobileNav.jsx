@@ -8,7 +8,7 @@ export default function MobileNav() {
         className="flex items-center justify-center py-2.5"
         href="/dashboard"
       >
-        <Image src="/logo.png" alt="Ummati" width={48} height={48} />
+        <Image src="/logo.webp" alt="Ummati" width={48} height={48} />
       </Link>
       <ul className="flex flex-col items-center px-2 space-y-2 border-t border-gray-200">
         <li>
