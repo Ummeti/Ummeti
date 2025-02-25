@@ -4,12 +4,12 @@ import { ProjectIcon, PostIcon } from '../ui/Icons';
 export default async function AddLayout({ projects, posts }) {
   const tabs = [
     {
-      key: 'projects',
-      label: 'Projects',
+      key: 'project',
+      label: 'Project',
       icon: <ProjectIcon />,
       content: projects,
     },
-    { key: 'posts', label: 'Posts', icon: <PostIcon />, content: posts },
+    { key: 'post', label: 'Post', icon: <PostIcon />, content: posts },
   ];
 
   return <Tabs tabs={tabs} />;

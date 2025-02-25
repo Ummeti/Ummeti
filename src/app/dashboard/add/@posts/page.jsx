@@ -1,3 +1,5 @@
+import AddPostForm from './AddPostForm';
+
 export default function Posts() {
-  return <div>Posts</div>;
+  return <AddPostForm />;
 }

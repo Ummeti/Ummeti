@@ -4,17 +4,17 @@ import prisma from '@/lib/client';
 import { revalidatePath } from 'next/cache';
 
 export async function addProjectAction(formData) {
+  console.log(formData);
   const category = formData.get('newCategory') || formData.get('category');
 
   if (!category) return;
 
   const newCategory = await prisma.category.create({
     data: {
-      name: category,
+      title: category,
       userId: '67b8a35679de91ba0f6dfbfb',
     },
   });
-  console.log(newCategory);
 
   const { title, description, raised, goal } = {
     title: formData.get('title'),
@@ -34,13 +34,13 @@ export async function addProjectAction(formData) {
       images: ['img.jpg'],
     },
   });
-  console.log(project);
-  revalidatePath('/dashboard');
+
+  revalidatePath('/dashboard/add');
 }
 
 export async function removeProjectAction(id) {
   await prisma.project.delete({
     where: { id },
   });
-  revalidatePath('/');
+  revalidatePath('/dashboard');
 }

@@ -20,7 +20,7 @@ export default function Tabs({ tabs }) {
   }, [tabs]);
 
   return (
-    <div>
+    <div className="px-4 sm:px-6 md:px-8">
       {/* Mobile Dropdown */}
       <div className="sm:hidden p-4">
         <label htmlFor="tabSelect" className="sr-only">

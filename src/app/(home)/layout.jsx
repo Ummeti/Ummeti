@@ -15,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: 'Ummati',
-  description: 'Ummati platform',
+  title: 'Ummati Foundation – Zakat & Sadaqah Fundraising for Those in Need',
+  description:
+    'Ummati Foundation is a trusted Islamic nonprofit dedicated to collecting Zakat, Sadaqah, and donations to support the poor, orphans, and those in crisis. Join us in fulfilling your Islamic duty through charity, humanitarian aid, and sustainable relief projects worldwide. Donate today!',
 };
 
 export default function RootLayout({ children }) {

@@ -2,12 +2,11 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { addProjectAction } from '@/app/actions/projectActions';
 import { RemoveIcon, UploadIcon } from '../../ui/Icons';
+import { addPostAction } from '@/app/actions/postActions';
 
-export default function AddProjectForm({ categories }) {
+export default function AddPostForm() {
   const [images, setImages] = useState([]);
-  const [showNewCategoryInput, setShowNewCategoryInput] = useState(false);
 
   const handleFileChange = (event) => {
     const files = Array.from(event.target.files);
@@ -28,11 +27,10 @@ export default function AddProjectForm({ categories }) {
   return (
     <div className="py-8">
       <h2 className="text-center text-gray-900 text-3xl font-bold font-manrope leading-normal">
-        Add Project
+        Add Post
       </h2>
-
       <form
-        action={addProjectAction}
+        action={addPostAction}
         className="mt-8 space-y-4 max-w-xl mx-auto bg-white p-4 sm:p-6 md:p-8 shadow-lg rounded-lg"
         noValidate
       >
@@ -47,62 +45,10 @@ export default function AddProjectForm({ categories }) {
         <textarea
           name="description"
           placeholder="Description"
-          rows="4"
+          rows="8"
           className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 border border-gray-300 focus:ring-2 focus:ring-main focus:outline-none"
           required
           aria-label="Fundraiser Description"
-        />
-
-        <div className="space-y-2">
-          <label htmlFor="category" className="block text-sm text-gray-600">
-            Category
-          </label>
-          <div className="flex flex-col space-y-2">
-            <select
-              name="category"
-              className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm border border-gray-300 focus:ring-2 focus:ring-main focus:outline-none"
-              aria-label="Choose Category"
-              onChange={(e) => setShowNewCategoryInput(e.target.value === '')}
-              defaultValue="select"
-            >
-              <option value="select" disabled>
-                Select a category
-              </option>
-              {categories?.map((category) => (
-                <option key={category.id} value={category.title}>
-                  {category.title}
-                </option>
-              ))}
-              <option value="">New category</option>
-            </select>
-
-            {showNewCategoryInput && (
-              <input
-                type="text"
-                name="newCategory"
-                placeholder="Enter new category"
-                className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm border border-gray-300 focus:ring-2 focus:ring-main focus:outline-none mt-2"
-                aria-label="New Category"
-              />
-            )}
-          </div>
-        </div>
-
-        <input
-          type="number"
-          name="raised"
-          placeholder="Amount Raised ($)"
-          className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm border border-gray-300 focus:ring-2 focus:ring-main focus:outline-none"
-          required
-          aria-label="Amount Raised"
-        />
-        <input
-          type="number"
-          name="goal"
-          placeholder="Goal Amount ($)"
-          className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm border border-gray-300 focus:ring-2 focus:ring-main focus:outline-none"
-          required
-          aria-label="Fundraising Goal"
         />
 
         <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center bg-gray-100">
