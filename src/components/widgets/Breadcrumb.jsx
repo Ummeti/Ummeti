@@ -35,17 +35,18 @@ export default function Breadcrumb() {
         {pathSegments.map((segment, index) => {
           const isLast = index === pathSegments.length - 1;
           const href = '/' + pathSegments.slice(0, index + 1).join('/');
+          const decodedSegment = decodeURIComponent(segment).replace(/-/g, ' ');
 
           return (
             <li key={href} className="relative flex items-center">
               <span className="absolute inset-y-0 -start-px h-10 w-4 bg-main [clip-path:_polygon(0_0,_0%_100%,_100%_50%)] rtl:rotate-180"></span>
               <Link
                 href={href}
-                className={`flex h-10 items-center bg-white pe-4 ps-8 text-xs font-medium transition uppercase ${
-                  isLast ? 'text-gray-900' : 'hover:text-gray-900'
+                className={`flex h-10 items-center bg-white pe-4 ps-8 text-xs font-medium transition uppercase text-gray-600 ${
+                  isLast ? 'text-gray-600' : 'hover:text-gray-900'
                 }`}
               >
-                {segment}
+                {decodedSegment}
               </Link>
             </li>
           );

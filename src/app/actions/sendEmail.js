@@ -1,17 +1,7 @@
 'use server';
 
 import nodemailer from 'nodemailer';
-import { z } from 'zod';
-
-const EmailSchema = z.object({
-  name: z.string().min(1, 'Name is required'),
-  email: z.string().email('Invalid email format'),
-  subject: z.string().min(1, 'Subject is required'),
-  message: z
-    .string()
-    .min(10, 'Message must contain at least 10 characters')
-    .max(500, 'Message can contain a maximum of 500 characters'),
-});
+import { EmailSchema } from '@/lib/schemas';
 
 export async function sendEmailAction(prevState, formData) {
   const formObject = {

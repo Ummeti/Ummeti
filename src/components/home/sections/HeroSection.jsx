@@ -34,7 +34,7 @@ export default function HeroSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
         >
-          <Link href="/donate">Donate now</Link>
+          <Link href="/projects">Donate now</Link>
         </motion.div>
       </div>
     </section>

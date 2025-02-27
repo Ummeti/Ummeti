@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function ProjectCard({
-  project: { title, description, raised, goal },
+  project: { title, description, raised, goal, slug, images },
 }) {
   return (
     <motion.div
@@ -20,14 +20,16 @@ export default function ProjectCard({
       }}
     >
       <div className="relative aspect-video">
-        <Image className="object-cover" src="/bg-1.jpg" alt="test" fill />
+        <Image src={images[0]} alt="test" fill className="object-cover" />
       </div>
-      <div className="p-4 space-y-2">
-        <h3 className="text-lg font-medium text-gray-900">{title}</h3>
-        <p className="text-gray-700">{description}</p>
+      <div className="p-4 space-y-4">
+        <h3 className="text-lg font-medium text-gray-900 line-clamp-1">
+          {title}
+        </h3>
+        <p className="text-gray-700 line-clamp-4 h-24">{description}</p>
         <ProgressBar raised={raised} goal={goal} />
         <Link
-          href="/donate"
+          href={`/projects/${slug}`}
           className="block w-fit rounded-lg px-4 py-2 uppercase bg-main hover:bg-main-light duration-300 text-white font-bold"
         >
           Donate

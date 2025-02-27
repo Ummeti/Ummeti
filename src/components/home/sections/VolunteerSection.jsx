@@ -11,6 +11,7 @@ export default function VolunteerSection() {
     success: false,
     message: '',
     errors: {},
+    formObject: {},
   };
 
   const [state, formAction, isPending] = useActionState(

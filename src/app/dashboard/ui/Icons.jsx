@@ -6,33 +6,10 @@ export function RemoveIcon() {
       height="1.5rem"
       viewBox="0 0 24 24"
     >
-      <g
-        fill="none"
-        stroke="currentColor"
-        strokeDasharray={24}
-        strokeDashoffset={24}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-      >
-        <path d="M5 5l14 14">
-          <animate
-            fill="freeze"
-            attributeName="stroke-dashoffset"
-            dur="0.4s"
-            values="24;0"
-          ></animate>
-        </path>
-        <path d="M19 5l-14 14">
-          <animate
-            fill="freeze"
-            attributeName="stroke-dashoffset"
-            begin="0.4s"
-            dur="0.4s"
-            values="24;0"
-          ></animate>
-        </path>
-      </g>
+      <path
+        fill="currentColor"
+        d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z"
+      ></path>
     </svg>
   );
 }

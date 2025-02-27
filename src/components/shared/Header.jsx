@@ -44,7 +44,7 @@ export default function Header() {
             ))}
           </ul>
           <Link
-            href="/donate"
+            href="/projects"
             className="hidden lg:block rounded-full px-4 py-2 uppercase border duration-300 bg-main hover:bg-white text-white hover:text-gray-900 hover:scale-105 font-bold shadow-lg"
           >
             Donate

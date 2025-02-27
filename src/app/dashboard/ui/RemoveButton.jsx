@@ -1,4 +1,5 @@
 'use client';
+
 import { RemoveIcon } from './Icons';
 
 export default function RemoveButton({ onRemove, id }) {

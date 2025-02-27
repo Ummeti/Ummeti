@@ -1,19 +1,65 @@
 'use server';
 
 import prisma from '@/lib/client';
-import { S3Client, PutObjectCommand } from '@aws-sdk/client-s3';
+import s3Client from '@/lib/s3Client';
+import { PostIdSchema, PostSchema } from '@/lib/schemas';
+import { slugify } from '@/lib/utils';
+import { PutObjectCommand, DeleteObjectsCommand } from '@aws-sdk/client-s3';
 import { revalidatePath } from 'next/cache';
 
-const client = new S3Client({ region: process.env.AWS_REGION });
-
-export async function addPostAction(formData) {
-  const { title, description, images } = {
+export async function addPostAction(prevState, formData) {
+  const formObject = {
     title: formData.get('title'),
     description: formData.get('description'),
     images: formData.getAll('images'),
   };
 
-  const imageKeys = await Promise.all(
+  const parsed = PostSchema.safeParse(formObject);
+
+  if (!parsed.success) {
+    return {
+      success: false,
+      errors: parsed.error.flatten().fieldErrors,
+      formObject,
+    };
+  }
+
+  try {
+    const validatedData = parsed.data;
+    await createPost(validatedData);
+
+    revalidatePath('/dashboard');
+    return {
+      success: true,
+      message: 'Post created successfully',
+    };
+  } catch (error) {
+    console.error('Error adding post:', error);
+    return {
+      success: false,
+      message: 'Failed to create post. Please try again.',
+      formObject,
+    };
+  }
+}
+
+async function createPost(data) {
+  const imageKeys = await uploadImages(data.images);
+  const slug = await generateUniqueSlug(data.title);
+
+  return prisma.post.create({
+    data: {
+      title: data.title,
+      description: data.description,
+      slug,
+      userId: '67b8a35679de91ba0f6dfbfb',
+      images: imageKeys,
+    },
+  });
+}
+
+async function uploadImages(images) {
+  return Promise.all(
     images.map(async (file) => {
       const fileName = `${Date.now()}-${file.name}`;
       const key = `posts/${fileName}`;
@@ -27,24 +73,72 @@ export async function addPostAction(formData) {
         ContentType: file.type,
       });
 
-      await client.send(command);
+      await s3Client.send(command);
       return key;
     })
   );
+}
 
-  const post = await prisma.post.create({
-    data: {
-      title,
-      description,
-      userId: '67b8a35679de91ba0f6dfbfb',
-      images: imageKeys,
-    },
-  });
+async function generateUniqueSlug(title) {
+  const baseSlug = slugify(title);
+  let finalSlug = baseSlug;
+  let count = 0;
+
+  while (await prisma.post.findUnique({ where: { slug: finalSlug } })) {
+    count++;
+    finalSlug = `${baseSlug}-${count}`;
+  }
+
+  return finalSlug;
 }
 
 export async function removePostAction(id) {
-  await prisma.post.delete({
-    where: { id },
-  });
-  revalidatePath('/dashboard');
+  const parsed = PostIdSchema.safeParse(id);
+
+  if (!parsed.success) {
+    const errors = parsed.error.flatten().fieldErrors;
+    return { success: false, errors };
+  }
+
+  try {
+    const post = await prisma.post.findUnique({
+      where: { id },
+      select: { images: true },
+    });
+
+    if (!post) {
+      return {
+        success: false,
+        message: 'Post not found',
+      };
+    }
+
+    if (post.images?.length > 0) {
+      const deleteCommand = new DeleteObjectsCommand({
+        Bucket: process.env.AWS_S3_BUCKET,
+        Delete: {
+          Objects: post.images.map((key) => ({ Key: key })),
+          Quiet: true,
+        },
+      });
+
+      await s3Client.send(deleteCommand);
+    }
+
+    await prisma.post.delete({
+      where: { id },
+    });
+
+    revalidatePath('/dashboard');
+    return {
+      success: true,
+      message: 'Post deleted successfully',
+    };
+  } catch (error) {
+    console.error('Error removing post:', error);
+    return {
+      success: false,
+      message: 'Failed to delete post. Please try again.',
+    };
+  }
 }

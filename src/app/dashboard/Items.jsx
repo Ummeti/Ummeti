@@ -37,34 +37,34 @@ export default function Items({ items, headers, removeAction }) {
                   ))}
                 </div>
               </div>
-              <div className="w-full lg:p-5 p-4 rounded-2xl border border-gray-200 flex-col justify-start items-start gap-5 flex">
+              {/* <div className="w-full lg:p-5 p-4 rounded-2xl border border-gray-200 flex-col justify-start items-start gap-5 flex">
                 <div className="w-full px-5 pb-6 border-b border-gray-200 flex-col justify-start items-start gap-6 flex">
                   <div className="w-full justify-between items-start gap-6 inline-flex">
                     <h5 className="text-gray-500 text-lg font-normal leading-8">
-                      Subtotal
+                      posts
                     </h5>
                     <h5 className="text-right text-gray-900 text-lg font-semibold leading-8">
-                      $172.00
+                      done
                     </h5>
                   </div>
                   <div className="w-full justify-between items-start gap-6 inline-flex">
                     <h5 className="text-gray-500 text-lg font-normal leading-8">
-                      Shipping
+                      projects
                     </h5>
                     <h5 className="text-right text-gray-900 text-lg font-semibold leading-8">
-                      $20.00
+                      count
                     </h5>
                   </div>
                 </div>
                 <div className="px-5 pb-6 border-b border-gray-100 w-full justify-between items-start gap-6 inline-flex">
-                  <h5 className="text-indigo-600 text-xl font-semibold leading-8">
+                  <h5 className="text-main text-xl font-semibold leading-8">
                     Total
                   </h5>
-                  <h5 className="text-right text-indigo-600 text-xl font-semibold leading-8">
-                    $192.00
+                  <h5 className="text-right text-main text-xl font-semibold leading-8">
+                    test
                   </h5>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
