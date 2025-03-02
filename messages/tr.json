@@ -1,4 +1,10 @@
 {
+  "Metadata": {
+    "home": {
+      "title": "Ummeti Vakfı – İhtiyaç Sahipleri İçin Zekat ve Sadaka Toplama",
+      "description": "Ummeti Vakfı, zekat, sadaka ve bağışları toplayarak yoksullara, yetimlere ve kriz içinde olanlara destek olmayı amaçlayan güvenilir bir İslami yardım kuruluşudur. Hayır işleri, insani yardım ve dünya çapında sürdürülebilir yardım projeleriyle İslami görevinizi yerine getirmemize katılın. Bugün bağış yapın!"
+    }
+  },
   "Header": {
     "Home": "Ana Sayfa",
     "About": "Hakkımızda",
@@ -148,7 +154,7 @@
     },
     "email": {
       "title": "E-posta",
-      "value": "info@ummati.org"
+      "value": "info@ummeti.org"
     }
   },
   "Socials": {

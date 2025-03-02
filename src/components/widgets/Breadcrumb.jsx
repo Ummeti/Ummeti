@@ -1,5 +1,6 @@
 'use client';
 
+import { routing } from '@/i18n/routing';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -8,7 +9,7 @@ export default function Breadcrumb() {
 
   const pathSegments = pathname.split('/').filter((segment) => segment);
 
-  const supportedLocales = ['en', 'ar', 'tr'];
+  const supportedLocales = routing.locales;
   let cleanedSegments = [...pathSegments];
 
   if (supportedLocales.includes(cleanedSegments[0])) {

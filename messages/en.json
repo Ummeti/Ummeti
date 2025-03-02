@@ -1,4 +1,10 @@
 {
+  "Metadata": {
+    "home": {
+      "title": "Ummeti Foundation – Zakat & Sadaqah Fundraising for Those in Need",
+      "description": "Ummeti Foundation is a trusted Islamic nonprofit dedicated to collecting Zakat, Sadaqah, and donations to support the poor, orphans, and those in crisis. Join us in fulfilling your Islamic duty through charity, humanitarian aid, and sustainable relief projects worldwide. Donate today!"
+    }
+  },
   "Header": {
     "Home": "Home",
     "About": "About",
@@ -73,17 +79,17 @@
     }
   },
   "TestimonialsSection": {
-    "title": "What people say about Ummati"
+    "title": "What people say about Ummeti"
   },
   "ProjectsPage": {
     "title": "Projects",
     "allTab": "All"
   },
   "AboutPage": {
-    "title": "About Ummati",
-    "description": "Ummati is a global organization aimed at supporting the issues of the Islamic nation and advocating for the Palestinian cause.",
+    "title": "About Ummeti",
+    "description": "Ummeti is a global organization aimed at supporting the issues of the Islamic nation and advocating for the Palestinian cause.",
     "heroImageAlt": "About Us image",
-    "secondImageAlt": "Ummati",
+    "secondImageAlt": "Ummeti",
     "stats": {
       "projects": "Projects",
       "supporters": "Supporters",
@@ -91,15 +97,15 @@
     },
     "sections": {
       "vision": {
-        "title": "Ummati's Vision",
+        "title": "Ummeti's Vision",
         "content": "A global organization working within an institutional framework..."
       },
       "objectives": {
-        "title": "Ummati's Objectives",
+        "title": "Ummeti's Objectives",
         "content": "Unifying and coordinating the efforts of the Islamic nation..."
       },
       "uniqueness": {
-        "title": "What Sets Ummati Apart?",
+        "title": "What Sets Ummeti Apart?",
         "content": "A global network with access to resources, institutional work, and transparency."
       },
       "targetGroups": {
@@ -148,14 +154,14 @@
     },
     "email": {
       "title": "Email",
-      "value": "info@ummati.org"
+      "value": "info@ummeti.org"
     }
   },
   "Socials": {
     "title": "Follow Us"
   },
   "Footer": {
-    "Description": "Ummati is a global organization aimed at supporting the issues of the Islamic nation and advocating for the Palestinian cause.",
+    "Description": "Ummeti is a global organization aimed at supporting the issues of the Islamic nation and advocating for the Palestinian cause.",
     "AboutUs": "About Us",
     "AboutUsItems": {
       "VolunteerNow": "Volunteer Now",

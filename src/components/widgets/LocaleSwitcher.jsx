@@ -1,11 +1,17 @@
 'use client';
 
-import { useParams, usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useRouter } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { useLocale } from 'next-intl';
 import { useTransition, useState } from 'react';
-import { ArFlagIcon, EnFlagIcon, TrFlagIcon } from '../icons/FlagIcons';
+import {
+  ArFlagIcon,
+  EnFlagIcon,
+  IdFlagIcon,
+  RuFlagIcon,
+  TrFlagIcon,
+} from '../icons/FlagIcons';
 
 export default function LocaleDropdown() {
   const router = useRouter();
@@ -18,6 +24,8 @@ export default function LocaleDropdown() {
     en: <EnFlagIcon />,
     tr: <TrFlagIcon />,
     ar: <ArFlagIcon />,
+    id: <IdFlagIcon />,
+    ru: <RuFlagIcon />,
   };
 
   const switchLocale = (newLocale) => {
