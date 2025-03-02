@@ -1,0 +1,64 @@
+{
+  "Header": {
+    "Home": "Home",
+    "About": "About",
+    "Projects": "Projects",
+    "Blog": "Blog",
+    "Contact": "Contact",
+    "Donate": "Donate"
+  },
+  "HeroSection": {
+    "title": "Be a helping hand",
+    "description": "Contribute to building a better future for the nation",
+    "button": "Donate now"
+  },
+  "StatisticsSection": {
+    "projects": "projects",
+    "supporters": "supporters",
+    "served": "people served",
+    "ctaTitle": "Be Part of the Change",
+    "ctaLink": "become volunteer"
+  },
+  "VolunteerSection": {
+    "title": "Volunteer Now",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, nulla sapiente. Temporibus aut, aspernatur omnis iste inventore nulla neque? Saepe suscipit sequi qui ex doloremque sunt obcaecati, deserunt quisquam voluptate!",
+    "form": {
+      "name": "Name",
+      "subject": "Subject",
+      "email": "Email",
+      "message": "Message",
+      "sendButton": "Send",
+      "sending": "Sending..."
+    }
+  },
+  "TestimonialsSection": {
+    "title": "What people say about Ummati"
+  },
+  "Footer": {
+    "Description": "Ummati is a global organization aimed at supporting the issues of the Islamic nation and advocating for the Palestinian cause.",
+    "AboutUs": "About Us",
+    "AboutUsItems": {
+      "VolunteerNow": "Volunteer Now",
+      "Story": "Story",
+      "Projects": "Projects"
+    },
+    "Resources": "Resources",
+    "ResourcesItems": {
+      "Donors": "Donors",
+      "Community": "Community",
+      "Events": "Events"
+    },
+    "HelpfulLinks": "Helpful Links",
+    "HelpfulLinksItems": {
+      "FAQs": "FAQs",
+      "Contact": "Contact",
+      "Projects": "Projects"
+    },
+    "ContactUs": "Contact Us",
+    "Legal": {
+      "AllRightsReserved": "All rights reserved.",
+      "TermsAndConditions": "Terms & Conditions",
+      "PrivacyPolicy": "Privacy Policy"
+    }
+  }
+}

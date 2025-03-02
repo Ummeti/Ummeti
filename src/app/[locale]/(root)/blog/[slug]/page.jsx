@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { fetchPosttBySlug } from '@/lib/fetchData';
+import { fetchPostBySlug } from '@/lib/fetchData';
 import Breadcrumb from '@/components/widgets/Breadcrumb';
 import EmblaCarousel from '@/components/widgets/carousel/EmblaCarousel';
 
@@ -7,7 +7,7 @@ export default async function BlogPost({ params }) {
   const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug);
 
-  const [{ title, description, images, createdAt }] = await fetchPosttBySlug(
+  const [{ title, description, images, createdAt }] = await fetchPostBySlug(
     decodedSlug
   );
 

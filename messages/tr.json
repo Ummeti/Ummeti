@@ -1,0 +1,64 @@
+{
+  "Header": {
+    "Home": "Ana Sayfa",
+    "About": "Hakkımızda",
+    "Projects": "Projeler",
+    "Blog": "Blog",
+    "Contact": "İletişim",
+    "Donate": "Bağış Yap"
+  },
+  "HeroSection": {
+    "title": "Şimdi yardım eli ol",
+    "description": "Ulus için daha iyi bir gelecek inşa etmeye katkıda bulun",
+    "button": "Şimdi bağış yap"
+  },
+  "StatisticsSection": {
+    "projects": "Projeler",
+    "supporters": "Destekçiler",
+    "served": "Faydalananlar",
+    "ctaTitle": "Değişimin Bir Parçası Ol",
+    "ctaLink": "gönüllü ol"
+  },
+  "VolunteerSection": {
+    "title": "Şimdi Gönüllü Ol",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, nulla sapiente. Temporibus aut, aspernatur omnis iste inventore nulla neque? Saepe suscipit sequi qui ex doloremque sunt obcaecati, deserunt quisquam voluptate!",
+    "form": {
+      "name": "İsim",
+      "subject": "Konu",
+      "email": "E-posta",
+      "message": "Mesaj",
+      "sendButton": "Gönder",
+      "sending": "Gönderiliyor..."
+    }
+  },
+  "TestimonialsSection": {
+    "title": "İnsanlar Ummeti hakkında ne diyor"
+  },
+  "Footer": {
+    "Description": "Ummeti, İslam milletinin sorunlarını desteklemeyi ve Filistin davasını savunmayı amaçlayan küresel bir organizasyondur.",
+    "AboutUs": "Hakkımızda",
+    "AboutUsItems": {
+      "VolunteerNow": "Şimdi Gönüllü Ol",
+      "Story": "Hikaye",
+      "Projects": "Projeler"
+    },
+    "Resources": "Kaynaklar",
+    "ResourcesItems": {
+      "Donors": "Bağışçılar",
+      "Community": "Topluluk",
+      "Events": "Etkinlikler"
+    },
+    "HelpfulLinks": "Yararlı Bağlantılar",
+    "HelpfulLinksItems": {
+      "FAQs": "SSS",
+      "Contact": "İletişim",
+      "Projects": "Projeler"
+    },
+    "ContactUs": "Bize Ulaşın",
+    "Legal": {
+      "AllRightsReserved": "Tüm hakları saklıdır.",
+      "TermsAndConditions": "Şartlar ve Koşullar",
+      "PrivacyPolicy": "Gizlilik Politikası"
+    }
+  }
+}

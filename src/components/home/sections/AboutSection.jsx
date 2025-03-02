@@ -55,10 +55,10 @@ export default function AboutSection() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="col-span-3 space-y-4 p-4 sm:px-6 md:px-8 py-6"
           >
-            <h2 className="text-black font-manrope text-4xl font-semibold leading-10 md:text-left text-center">
+            <h2 className="text-black font-manrope text-4xl font-semibold leading-10 text-center md:text-left rtl:text-right">
               Who are we?
             </h2>
-            <p className="text-gray-600 text-lg font-normal leading-7 md:text-left text-center">
+            <p className="text-gray-600 text-lg font-normal leading-7 text-center md:text-left rtl:text-right">
               We are a group of young professionals from diverse fields,
               including administration, engineering, accounting, and law.
               Brought together by shared interests, we are united by a vision to

@@ -30,7 +30,7 @@ export default function ProjectCard({
         <ProgressBar raised={raised} goal={goal} />
         <Link
           href={`/projects/${slug}`}
-          className="block w-fit rounded-lg px-4 py-2 uppercase bg-main hover:bg-main-light duration-300 text-white font-bold"
+          className="block w-fit rounded-lg px-4 py-2 rtl:mr-auto uppercase bg-main hover:bg-main-light duration-300 text-white font-bold"
         >
           Donate
         </Link>

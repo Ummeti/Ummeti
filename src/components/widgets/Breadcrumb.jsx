@@ -5,7 +5,15 @@ import { usePathname } from 'next/navigation';
 
 export default function Breadcrumb() {
   const pathname = usePathname();
+
   const pathSegments = pathname.split('/').filter((segment) => segment);
+
+  const supportedLocales = ['en', 'ar', 'tr'];
+  let cleanedSegments = [...pathSegments];
+
+  if (supportedLocales.includes(cleanedSegments[0])) {
+    cleanedSegments = cleanedSegments.slice(1);
+  }
 
   return (
     <nav aria-label="Breadcrumb" className="flex">
@@ -32,10 +40,10 @@ export default function Breadcrumb() {
             <span className="ms-1.5 text-xs font-medium uppercase">Home</span>
           </Link>
         </li>
-        {pathSegments.map((segment, index) => {
-          const isLast = index === pathSegments.length - 1;
-          const href = '/' + pathSegments.slice(0, index + 1).join('/');
-          const decodedSegment = decodeURIComponent(segment).replace(/-/g, ' ');
+        {cleanedSegments.map((segment, index) => {
+          const isLast = index === cleanedSegments.length - 1;
+          const href = '/' + cleanedSegments.slice(0, index + 1).join('/');
+          const decodedSegment = decodeURIComponent(segment).replace(/-/g, ' '); // Show raw segment, decoded
 
           return (
             <li key={href} className="relative flex items-center">

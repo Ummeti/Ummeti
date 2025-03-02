@@ -2,12 +2,15 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
-export default function Statistics() {
+export default function StatisticsSection() {
+  const t = useTranslations('StatisticsSection');
+
   const stats = [
-    { label: 'Projects', value: 150 },
-    { label: 'Supporters', value: 5000 },
-    { label: 'People Served', value: 25000 },
+    { label: t('projects'), value: 150 },
+    { label: t('supporters'), value: 5000 },
+    { label: t('served'), value: 25000 },
   ];
 
   return (
@@ -23,7 +26,7 @@ export default function Statistics() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
           >
-            Be Part of the Change
+            {t('ctaTitle')}
           </motion.h3>
           <motion.p
             className="mt-2"
@@ -32,7 +35,7 @@ export default function Statistics() {
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
           >
             <Link href="/#volunteer" className="text-white underline">
-              become volunteer
+              {t('ctaLink')}
             </Link>
             <span className="text-white"> →</span>
           </motion.p>
@@ -68,7 +71,7 @@ function StatCard({ label, value }) {
     >
       <h2 className="text-4xl font-bold text-main">{count}</h2>
       <div className="w-12 mx-auto border-t-2 border-black mt-2 mb-4"></div>
-      <p className="text-gray-600">{label}</p>
+      <p className="text-gray-600 capitalize">{label}</p>
     </motion.div>
   );
 }

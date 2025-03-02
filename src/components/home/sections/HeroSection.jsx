@@ -1,8 +1,11 @@
 'use client';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 export default function HeroSection() {
+  const t = useTranslations('HeroSection');
+
   return (
     <section className="relative h-[calc(100vh-314px)]">
       <div className="absolute inset-0 bg-cover bg-center bg-[url(/bg-1.jpg)] bg-fixed"></div>
@@ -16,7 +19,7 @@ export default function HeroSection() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          Be a helping hand now
+          {t('title')}
         </motion.h1>
 
         <motion.p
@@ -25,7 +28,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
           className="mb-6 text-lg drop-shadow-2xl"
         >
-          Contribute to building a better future for the nation
+          {t('description')}
         </motion.p>
 
         <motion.div
@@ -34,7 +37,7 @@ export default function HeroSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
         >
-          <Link href="/projects">Donate now</Link>
+          <Link href="/projects">{t('button')}</Link>
         </motion.div>
       </div>
     </section>

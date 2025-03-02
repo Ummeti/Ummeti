@@ -59,7 +59,7 @@ export const fetchProjectBySlug = async (slug) => {
   return enhanceWithImages([project]);
 };
 
-export const fetchPosttBySlug = async (slug) => {
+export const fetchPostBySlug = async (slug) => {
   const post = await prisma.post.findUnique({
     where: { slug },
   });

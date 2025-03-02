@@ -5,8 +5,11 @@ import { sendEmailAction } from '@/app/actions/sendEmail';
 import ContactInfo from '../../widgets/ContactInfo';
 import Socials from '../../widgets/Socials';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl'; // Updated import
 
 export default function VolunteerSection() {
+  const t = useTranslations('VolunteerSection'); // Updated usage
+
   const initialState = {
     success: false,
     message: '',
@@ -45,12 +48,9 @@ export default function VolunteerSection() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          <h1 className="text-4xl font-bold text-gray-900">Volunteer Now</h1>
+          <h1 className="text-4xl font-bold text-gray-900">{t('title')}</h1>
           <p className="text-sm text-gray-600 mt-4 leading-relaxed">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet,
-            nulla sapiente. Temporibus aut, aspernatur omnis iste inventore
-            nulla neque? Saepe suscipit sequi qui ex doloremque sunt obcaecati,
-            deserunt quisquam voluptate!
+            {t('description')}
           </p>
           <ContactInfo color="text-gray-900" />
           <Socials color="text-gray-900" />
@@ -66,7 +66,7 @@ export default function VolunteerSection() {
             <input
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder={t('form.name')}
               className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-second"
               defaultValue={state.formObject?.name}
             />
@@ -77,7 +77,7 @@ export default function VolunteerSection() {
             <input
               type="text"
               name="subject"
-              placeholder="Subject"
+              placeholder={t('form.subject')}
               className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-second"
               defaultValue={state.formObject?.subject}
             />
@@ -88,7 +88,7 @@ export default function VolunteerSection() {
             <input
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder={t('form.email')}
               className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-second"
               defaultValue={state.formObject?.email}
             />
@@ -98,7 +98,7 @@ export default function VolunteerSection() {
 
             <textarea
               name="message"
-              placeholder="Message"
+              placeholder={t('form.message')}
               rows="6"
               className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 outline-second"
               defaultValue={state.formObject?.message}
@@ -128,7 +128,7 @@ export default function VolunteerSection() {
                   data-original="#000000"
                 />
               </svg>
-              {isPending ? 'Sending...' : 'Send Message'}
+              {isPending ? t('form.sending') : t('form.sendButton')}
             </motion.button>
 
             {state.message && (

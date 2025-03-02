@@ -128,8 +128,10 @@
 import { motion } from 'framer-motion';
 import Rate from '../../widgets/Rate';
 import EmblaCarousel from '../../widgets/carousel/EmblaCarousel';
+import { useTranslations } from 'next-intl';
 
 export default function TestimonialsSection() {
+  const t = useTranslations('TestimonialsSection');
   return (
     <motion.section
       className="bg-white mt-20"
@@ -139,7 +141,7 @@ export default function TestimonialsSection() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-          What people say about Ummati
+          {t('title')}
         </h2>
         <div className="mt-8">
           <EmblaCarousel>

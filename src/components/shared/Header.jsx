@@ -2,19 +2,21 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import EnFlagIcon from '../icons/EnFlagIcon';
+import { useTranslations } from 'next-intl';
 import CloseIcon from '../icons/CloseIcon';
 import MenuIcon from '../icons/MenuIcon';
+import LocaleSwitcher from '../widgets/LocaleSwitcher';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const t = useTranslations('Header');
 
   const menuItems = [
-    { label: 'Home', href: '/' },
-    { label: 'About', href: '/about' },
-    { label: 'Projects', href: '/projects' },
-    { label: 'Blog', href: '/#blog' },
-    { label: 'Contact', href: '/contact' },
+    { label: t('Home'), href: '/' },
+    { label: t('About'), href: '/about' },
+    { label: t('Projects'), href: '/projects' },
+    { label: t('Blog'), href: '/#blog' },
+    { label: t('Contact'), href: '/contact' },
   ];
 
   return (
@@ -34,7 +36,6 @@ export default function Header() {
             {menuItems.map((item) => (
               <li key={item.label}>
                 <Link
-                  key={item.label}
                   href={item.href}
                   className="text-gray-800 hover:text-main duration-300 text-sm font-semibold uppercase"
                 >
@@ -47,12 +48,9 @@ export default function Header() {
             href="/projects"
             className="hidden lg:block rounded-full px-4 py-2 uppercase border duration-300 bg-main hover:bg-white text-white hover:text-gray-900 hover:scale-105 font-bold shadow-lg"
           >
-            Donate
+            {t('Donate')}
           </Link>
-          <button className="flex items-center gap-2 border px-3 py-1 text-sm font-medium rounded-lg text-gray-800 hover:bg-gray-100">
-            <EnFlagIcon />
-            EN
-          </button>
+          <LocaleSwitcher />
         </nav>
         <div className="md:hidden">
           <button className="text-3xl" onClick={() => setMenuOpen(!menuOpen)}>
@@ -70,10 +68,7 @@ export default function Header() {
                   {item.label}
                 </Link>
               ))}
-              <button className="flex items-center gap-2 border px-3 py-1 text-sm font-medium rounded-lg text-gray-800 hover:bg-gray-100">
-                <EnFlagIcon />
-                EN
-              </button>
+              <LocaleSwitcher />
             </nav>
           )}
         </div>
