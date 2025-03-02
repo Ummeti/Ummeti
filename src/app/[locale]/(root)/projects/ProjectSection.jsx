@@ -3,8 +3,10 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Breadcrumb from '@/components/widgets/Breadcrumb';
 import ProjectCard from '@/components/home/ui/ProjectCard';
+import { useTranslations } from 'use-intl';
 
 export default function ProjectSection({ projects, categoriesList }) {
+  const t = useTranslations('ProjectsPage');
   const categories = categoriesList.map((cat) => cat.title);
   const [selectedCategory, setSelectedCategory] = useState('All');
 
@@ -18,7 +20,7 @@ export default function ProjectSection({ projects, categoriesList }) {
   return (
     <div className="px-4 sm:px-6 md:px-8 max-w-6xl mx-auto mt-20">
       <Breadcrumb />
-      <h1 className="text-3xl font-bold text-center mb-6 mt-4">Projects</h1>
+      <h1 className="text-3xl font-bold text-center mb-6 mt-4">{t('title')}</h1>
       <div className="flex justify-center gap-3 mb-6 flex-wrap">
         {['All', ...categories].map((category) => (
           <button
@@ -30,7 +32,7 @@ export default function ProjectSection({ projects, categoriesList }) {
                 : 'bg-second-lightest'
             }`}
           >
-            {category}
+            {category === 'All' ? t('allTab') : category}
           </button>
         ))}
       </div>

@@ -3,10 +3,12 @@ import ProgressBar from '@/components/widgets/ProgressBar';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'use-intl';
 
 export default function ProjectCard({
   project: { title, description, raised, goal, slug, images },
 }) {
+  const t = useTranslations('Header');
   return (
     <motion.div
       className="bg-second-lightest h-full rounded-lg shadow-sm overflow-hidden"
@@ -23,7 +25,7 @@ export default function ProjectCard({
         <Image src={images[0]} alt="test" fill className="object-cover" />
       </div>
       <div className="p-4 space-y-4">
-        <h3 className="text-lg font-medium text-gray-900 line-clamp-1">
+        <h3 className="text-lg font-medium text-gray-900 line-clamp-1 capitalize">
           {title}
         </h3>
         <p className="text-gray-700 line-clamp-4 h-24">{description}</p>
@@ -32,7 +34,7 @@ export default function ProjectCard({
           href={`/projects/${slug}`}
           className="block w-fit rounded-lg px-4 py-2 rtl:mr-auto uppercase bg-main hover:bg-main-light duration-300 text-white font-bold"
         >
-          Donate
+          {t('Donate')}
         </Link>
       </div>
     </motion.div>

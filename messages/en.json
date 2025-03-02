@@ -13,11 +13,52 @@
     "button": "Donate now"
   },
   "StatisticsSection": {
-    "projects": "projects",
-    "supporters": "supporters",
-    "served": "people served",
+    "projects": "Projects",
+    "supporters": "Supporters",
+    "served": "People served",
     "ctaTitle": "Be Part of the Change",
     "ctaLink": "become volunteer"
+  },
+  "AboutSection": {
+    "title": "Who are we?",
+    "description": "We are a group of young professionals from diverse fields, including administration, engineering, accounting, and law. Brought together by shared interests, we are united by a vision to make a positive impact on society.",
+    "goals": {
+      "vision": {
+        "title": "Our Vision",
+        "description": "To become a leading force in community service, driving innovation, and promoting sustainable development."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "description": [
+          "Develop and implement community projects that address societal needs and drive meaningful change.",
+          "Partner with local and international organizations to exchange expertise and adopt best practices.",
+          "Empower our members through continuous training, skill development, and professional growth."
+        ]
+      },
+      "goals": {
+        "title": "Our Goals",
+        "description": [
+          "Raise community awareness and foster a culture of volunteerism.",
+          "Launch sustainable development projects across various sectors.",
+          "Promote social solidarity and provide support to those in need.",
+          "Encourage innovation and creativity among young people.",
+          "Build strong partnerships at both local and international levels."
+        ]
+      },
+      "values": {
+        "title": "Our Values",
+        "description": [
+          "Integrity and transparency in all our endeavors.",
+          "Collaboration and teamwork to achieve greater impact.",
+          "Commitment to excellence and achieving meaningful goals.",
+          "Respect for diversity, inclusion, and equal opportunities.",
+          "Lifelong learning and continuous self-improvement."
+        ]
+      }
+    }
+  },
+  "ProjectsSection": {
+    "title": "Projects"
   },
   "VolunteerSection": {
     "title": "Volunteer Now",
@@ -33,6 +74,85 @@
   },
   "TestimonialsSection": {
     "title": "What people say about Ummati"
+  },
+  "ProjectsPage": {
+    "title": "Projects",
+    "allTab": "All"
+  },
+  "AboutPage": {
+    "title": "About Ummati",
+    "description": "Ummati is a global organization aimed at supporting the issues of the Islamic nation and advocating for the Palestinian cause.",
+    "heroImageAlt": "About Us image",
+    "secondImageAlt": "Ummati",
+    "stats": {
+      "projects": "Projects",
+      "supporters": "Supporters",
+      "peopleServed": "People Served"
+    },
+    "sections": {
+      "vision": {
+        "title": "Ummati's Vision",
+        "content": "A global organization working within an institutional framework..."
+      },
+      "objectives": {
+        "title": "Ummati's Objectives",
+        "content": "Unifying and coordinating the efforts of the Islamic nation..."
+      },
+      "uniqueness": {
+        "title": "What Sets Ummati Apart?",
+        "content": "A global network with access to resources, institutional work, and transparency."
+      },
+      "targetGroups": {
+        "title": "Targeted Groups",
+        "content": "Those affected by wars, refugees, displaced individuals, oppressed groups, and orphans."
+      }
+    }
+  },
+  "ContactPage": {
+    "title": "Contact Us",
+    "description": "We use an agile approach to test assumptions and connect with the needs of your audience early and often.",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "John Doe"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "Inquiry about..."
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "example@domain.com"
+      },
+      "message": {
+        "label": "Your message",
+        "placeholder": "Leave a comment..."
+      },
+      "button": {
+        "send": "Send Message",
+        "sending": "Sending..."
+      }
+    },
+    "termsText": "By submitting this form you agree to our {terms} and our {privacy}.",
+    "terms": "terms and conditions",
+    "privacy": "privacy policy"
+  },
+  "ContactInfo": {
+    "address": {
+      "title": "Address",
+      "value": "123 Main Street, City, Country"
+    },
+    "phone": {
+      "title": "Phone",
+      "value": "+1 (123) 456-7890"
+    },
+    "email": {
+      "title": "Email",
+      "value": "info@ummati.org"
+    }
+  },
+  "Socials": {
+    "title": "Follow Us"
   },
   "Footer": {
     "Description": "Ummati is a global organization aimed at supporting the issues of the Islamic nation and advocating for the Palestinian cause.",

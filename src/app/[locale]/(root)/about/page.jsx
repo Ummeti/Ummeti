@@ -2,8 +2,11 @@
 import { motion } from 'framer-motion';
 import Breadcrumb from '@/components/widgets/Breadcrumb';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function About() {
+  const t = useTranslations('AboutPage');
+
   return (
     <motion.section
       className="px-4 sm:px-6 md:px-8 mx-auto mt-20 max-w-6xl"
@@ -27,7 +30,7 @@ export default function About() {
           <Image
             className="object-cover"
             src="/bg-4.jpg"
-            alt="About Us image"
+            alt={t('heroImageAlt')}
             fill
           />
         </motion.div>
@@ -39,18 +42,17 @@ export default function About() {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <h1 className="text-gray-900 text-3xl font-bold font-manrope leading-normal">
-            About Ummati
+            {t('title')}
           </h1>
           <p className="text-gray-500 text-base font-normal leading-relaxed">
-            Ummati is a global organization aimed at supporting the issues of
-            the Islamic nation and advocating for the Palestinian cause.
+            {t('description')}
           </p>
           {/* Stats */}
           <div className="w-full flex justify-center lg:justify-start gap-10">
             {[
-              { number: '33+', label: 'Projects' },
-              { number: '125+', label: 'Supporters' },
-              { number: '52+', label: 'People Served' },
+              { number: '33+', label: t('stats.projects') },
+              { number: '125+', label: t('stats.supporters') },
+              { number: '52+', label: t('stats.peopleServed') },
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -79,24 +81,20 @@ export default function About() {
         >
           {[
             {
-              title: "Ummati's Vision",
-              content:
-                'A global organization working within an institutional framework...',
+              title: t('sections.vision.title'),
+              content: t('sections.vision.content'),
             },
             {
-              title: "Ummati's Objectives",
-              content:
-                'Unifying and coordinating the efforts of the Islamic nation...',
+              title: t('sections.objectives.title'),
+              content: t('sections.objectives.content'),
             },
             {
-              title: 'What Sets Ummati Apart?',
-              content:
-                'A global network with access to resources, institutional work, and transparency.',
+              title: t('sections.uniqueness.title'),
+              content: t('sections.uniqueness.content'),
             },
             {
-              title: 'Targeted Groups',
-              content:
-                'Those affected by wars, refugees, displaced individuals, oppressed groups, and orphans.',
+              title: t('sections.targetGroups.title'),
+              content: t('sections.targetGroups.content'),
             },
           ].map((section, i) => (
             <motion.div
@@ -120,7 +118,12 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          <Image className="object-cover" src="/bg-1.jpg" alt="Ummati" fill />
+          <Image
+            className="object-cover"
+            src="/bg-1.jpg"
+            alt={t('secondImageAlt')}
+            fill
+          />
         </motion.div>
       </div>
     </motion.section>

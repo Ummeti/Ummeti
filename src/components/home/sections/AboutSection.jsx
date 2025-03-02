@@ -2,41 +2,27 @@
 import { motion } from 'framer-motion';
 import Accordion from '@/components/widgets/Accordion';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function AboutSection() {
+  const t = useTranslations('AboutSection');
+
   const goals = [
     {
-      title: 'Our Vision',
-      description:
-        'To become a leading force in community service, driving innovation, and promoting sustainable development.',
+      title: t('goals.vision.title'),
+      description: t('goals.vision.description'),
     },
     {
-      title: 'Our Mission',
-      description: [
-        'Develop and implement community projects that address societal needs and drive meaningful change.',
-        'Partner with local and international organizations to exchange expertise and adopt best practices.',
-        'Empower our members through continuous training, skill development, and professional growth.',
-      ],
+      title: t('goals.mission.title'),
+      description: t.raw('goals.mission.description'),
     },
     {
-      title: 'Our Goals',
-      description: [
-        'Raise community awareness and foster a culture of volunteerism.',
-        'Launch sustainable development projects across various sectors.',
-        'Promote social solidarity and provide support to those in need.',
-        'Encourage innovation and creativity among young people.',
-        'Build strong partnerships at both local and international levels.',
-      ],
+      title: t('goals.goals.title'),
+      description: t.raw('goals.goals.description'),
     },
     {
-      title: 'Our Values',
-      description: [
-        'Integrity and transparency in all our endeavors.',
-        'Collaboration and teamwork to achieve greater impact.',
-        'Commitment to excellence and achieving meaningful goals.',
-        'Respect for diversity, inclusion, and equal opportunities.',
-        'Lifelong learning and continuous self-improvement.',
-      ],
+      title: t('goals.values.title'),
+      description: t.raw('goals.values.description'),
     },
   ];
 
@@ -56,13 +42,10 @@ export default function AboutSection() {
             className="col-span-3 space-y-4 p-4 sm:px-6 md:px-8 py-6"
           >
             <h2 className="text-black font-manrope text-4xl font-semibold leading-10 text-center md:text-left rtl:text-right">
-              Who are we?
+              {t('title')}
             </h2>
             <p className="text-gray-600 text-lg font-normal leading-7 text-center md:text-left rtl:text-right">
-              We are a group of young professionals from diverse fields,
-              including administration, engineering, accounting, and law.
-              Brought together by shared interests, we are united by a vision to
-              make a positive impact on society.
+              {t('description')}
             </p>
             <motion.div
               initial={{ opacity: 0, x: -240 }}

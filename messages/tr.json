@@ -19,6 +19,47 @@
     "ctaTitle": "Değişimin Bir Parçası Ol",
     "ctaLink": "gönüllü ol"
   },
+  "AboutSection": {
+    "title": "Biz kimiz?",
+    "description": "Yönetim, mühendislik, muhasebe ve hukuk dahil olmak üzere çeşitli alanlardan genç profesyonellerden oluşan bir grubuz. Ortak ilgilerle bir araya gelen bizler, toplum üzerinde olumlu bir etki yaratma vizyonuyla birleştik.",
+    "goals": {
+      "vision": {
+        "title": "Vizyonumuz",
+        "description": "Toplum hizmetinde öncü bir güç olmak, yeniliği teşvik etmek ve sürdürülebilir kalkınmayı desteklemek."
+      },
+      "mission": {
+        "title": "Misyonumuz",
+        "description": [
+          "Toplumsal ihtiyaçları karşılayan ve anlamlı değişimi sağlayan topluluk projeleri geliştirmek ve uygulamak.",
+          "Uzmanlık alışverişi yapmak ve en iyi uygulamaları benimsemek için yerel ve uluslararası kuruluşlarla ortaklık kurmak.",
+          "Üyelerimizi sürekli eğitim, beceri geliştirme ve profesyonel büyüme yoluyla güçlendirmek."
+        ]
+      },
+      "goals": {
+        "title": "Hedeflerimiz",
+        "description": [
+          "Toplum bilincini artırmak ve gönüllülük kültürünü teşvik etmek.",
+          "Çeşitli sektörlerde sürdürülebilir kalkınma projeleri başlatmak.",
+          "Sosyal dayanışmayı teşvik etmek ve ihtiyaç sahiplerine destek sağlamak.",
+          "Gençler arasında yenilikçilik ve yaratıcılığı teşvik etmek.",
+          "Hem yerel hem de uluslararası düzeyde güçlü ortaklıklar kurmak."
+        ]
+      },
+      "values": {
+        "title": "Değerlerimiz",
+        "description": [
+          "Tüm çabalarımızda dürüstlük ve şeffaflık.",
+          "Daha büyük etki yaratmak için işbirliği ve takım çalışması.",
+          "Mükemmelliğe ve anlamlı hedeflere ulaşmaya bağlılık.",
+          "Çeşitlilik, kapsayıcılık ve eşit fırsatlara saygı.",
+          "Yaşam boyu öğrenme ve sürekli kendini geliştirme."
+        ]
+      }
+    }
+  },
+  "ProjectsSection": {
+    "title": "Projeler"
+  },
   "VolunteerSection": {
     "title": "Şimdi Gönüllü Ol",
     "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, nulla sapiente. Temporibus aut, aspernatur omnis iste inventore nulla neque? Saepe suscipit sequi qui ex doloremque sunt obcaecati, deserunt quisquam voluptate!",
@@ -33,6 +74,85 @@
   },
   "TestimonialsSection": {
     "title": "İnsanlar Ummeti hakkında ne diyor"
+  },
+  "ProjectsPage": {
+    "title": "Projeler",
+    "allTab": "Tümü"
+  },
+  "AboutPage": {
+    "title": "Ummeti Hakkında",
+    "description": "Ummeti, İslam ümmetinin sorunlarını desteklemeyi ve Filistin davasını savunmayı amaçlayan küresel bir kuruluştur.",
+    "heroImageAlt": "Hakkımızda resmi",
+    "secondImageAlt": "Ummeti",
+    "stats": {
+      "projects": "Projeler",
+      "supporters": "Destekçiler",
+      "peopleServed": "Hizmet Edilen Kişiler"
+    },
+    "sections": {
+      "vision": {
+        "title": "Ummeti'nin Vizyonu",
+        "content": "Kurumsal bir çerçeve içinde çalışan küresel bir organizasyon..."
+      },
+      "objectives": {
+        "title": "Ummeti'nin Hedefleri",
+        "content": "İslam ümmetinin çabalarını birleştirmek ve koordine etmek..."
+      },
+      "uniqueness": {
+        "title": "Ummeti'yi Farklı Kılan Nedir?",
+        "content": "Kaynaklara erişimi olan küresel bir ağ, kurumsal çalışma ve şeffaflık."
+      },
+      "targetGroups": {
+        "title": "Hedef Gruplar",
+        "content": "Savaşlardan etkilenenler, mülteciler, yerinden edilmiş kişiler, ezilen gruplar ve yetimler."
+      }
+    }
+  },
+  "ContactPage": {
+    "title": "Bize Ulaşın",
+    "description": "Varsayımları test etmek ve kitlenizin ihtiyaçlarıyla erken ve sık bağlantı kurmak için çevik bir yaklaşım kullanıyoruz.",
+    "form": {
+      "name": {
+        "label": "İsim",
+        "placeholder": "Ahmet Yılmaz"
+      },
+      "subject": {
+        "label": "Konu",
+        "placeholder": "Hakkında sorgulama..."
+      },
+      "email": {
+        "label": "E-posta",
+        "placeholder": "ornek@domain.com"
+      },
+      "message": {
+        "label": "Mesajınız",
+        "placeholder": "Yorum bırakın..."
+      },
+      "button": {
+        "send": "Mesaj Gönder",
+        "sending": "Gönderiliyor..."
+      }
+    },
+    "termsText": "Bu formu göndererek {terms} ve {privacy} kabul etmiş olursunuz.",
+    "terms": "şartlar ve koşullar",
+    "privacy": "gizlilik politikası"
+  },
+  "ContactInfo": {
+    "address": {
+      "title": "Adres",
+      "value": "123 Ana Cadde, Şehir, Ülke"
+    },
+    "phone": {
+      "title": "Telefon",
+      "value": "+1 (123) 456-7890"
+    },
+    "email": {
+      "title": "E-posta",
+      "value": "info@ummati.org"
+    }
+  },
+  "Socials": {
+    "title": "Bizi Takip Edin"
   },
   "Footer": {
     "Description": "Ummeti, İslam milletinin sorunlarını desteklemeyi ve Filistin davasını savunmayı amaçlayan küresel bir organizasyondur.",
