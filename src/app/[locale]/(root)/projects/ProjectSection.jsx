@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Breadcrumb from '@/components/widgets/Breadcrumb';
 import ProjectCard from '@/components/home/ui/ProjectCard';
-import { useTranslations } from 'use-intl';
+import { useTranslations } from 'next-intl';
 
 export default function ProjectSection({ projects, categoriesList }) {
   const t = useTranslations('ProjectsPage');

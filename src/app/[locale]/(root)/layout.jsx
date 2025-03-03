@@ -60,9 +60,13 @@ export default async function LocaleLayout({ children }) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} dir={direction} className="scroll-smooth">
+    <html
+      lang={locale}
+      dir={direction}
+      className="scroll-smooth overflow-x-hidden"
+    >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
         <NextIntlClientProvider messages={messages}>
           <Header />

@@ -64,7 +64,11 @@
     }
   },
   "ProjectsSection": {
-    "title": "Proyek"
+    "title": "Proyek",
+    "projectCard": {
+      "goal": "Tujuan",
+      "button": "Donasi"
+    }
   },
   "VolunteerSection": {
     "title": "Jadilah Relawan Sekarang",
@@ -85,6 +89,16 @@
     "title": "Proyek",
     "allTab": "Semua"
   },
+  "DonationForm": {
+    "fullName": "Nama lengkap",
+    "email": "Email",
+    "amount": "Jumlah donasi",
+    "cardNumber": "Nomor kartu",
+    "expirationDate": "Tanggal kedaluwarsa",
+    "securityCode": "Kode keamanan",
+    "donateNow": "Donasi Sekarang"
+  },
+
   "AboutPage": {
     "title": "Tentang Ummeti",
     "description": "Ummeti adalah organisasi global yang bertujuan mendukung isu-isu umat Islam dan memperjuangkan perjuangan Palestina.",
@@ -116,32 +130,32 @@
   },
   "ContactPage": {
     "title": "Hubungi Kami",
-    "description": "Kami menggunakan pendekatan tangkas untuk menguji asumsi dan terhubung dengan kebutuhan audiens Anda sejak awal dan secara berkala.",
+    "description": "Hubungi kami untuk pertanyaan atau dukungan.",
     "form": {
       "name": {
         "label": "Nama",
-        "placeholder": "John Doe"
+        "placeholder": "Masukkan nama Anda"
       },
       "subject": {
         "label": "Subjek",
-        "placeholder": "Pertanyaan tentang..."
+        "placeholder": "Masukkan subjek"
       },
       "email": {
         "label": "Email",
-        "placeholder": "example@domain.com"
+        "placeholder": "Masukkan email Anda"
       },
       "message": {
-        "label": "Pesan Anda",
-        "placeholder": "Tinggalkan komentar..."
+        "label": "Pesan",
+        "placeholder": "Masukkan pesan Anda"
       },
       "button": {
         "send": "Kirim Pesan",
         "sending": "Mengirim..."
       }
     },
-    "termsText": "Dengan mengirimkan formulir ini, Anda setuju dengan {terms} dan {privacy} kami.",
-    "terms": "syarat dan ketentuan",
-    "privacy": "kebijakan privasi"
+    "termsText": "Dengan mengirimkan formulir ini, Anda setuju dengan {terms} dan {privacy}.",
+    "terms": "Syarat Layanan",
+    "privacy": "Kebijakan Privasi"
   },
   "ContactInfo": {
     "address": {

@@ -64,7 +64,11 @@
     }
   },
   "ProjectsSection": {
-    "title": "Проекты"
+    "title": "Проекты",
+    "projectCard": {
+      "goal": "Цель",
+      "button": "Пожертвовать"
+    }
   },
   "VolunteerSection": {
     "title": "Станьте волонтером",
@@ -84,6 +88,15 @@
   "ProjectsPage": {
     "title": "Проекты",
     "allTab": "Все"
+  },
+  "DonationForm": {
+    "fullName": "Полное имя",
+    "email": "Электронная почта",
+    "amount": "Сумма пожертвования",
+    "cardNumber": "Номер карты",
+    "expirationDate": "Срок действия",
+    "securityCode": "Код безопасности",
+    "donateNow": "Пожертвовать"
   },
   "AboutPage": {
     "title": "О фонде Ummeti",
@@ -115,33 +128,33 @@
     }
   },
   "ContactPage": {
-    "title": "Свяжитесь с нами",
-    "description": "Мы используем гибкий подход, чтобы тестировать гипотезы и соответствовать потребностям вашей аудитории.",
+    "title": "Связаться с нами",
+    "description": "Свяжитесь с нами для получения любых запросов или поддержки.",
     "form": {
       "name": {
         "label": "Имя",
-        "placeholder": "Иван Иванов"
+        "placeholder": "Введите ваше имя"
       },
       "subject": {
         "label": "Тема",
-        "placeholder": "Вопрос о..."
+        "placeholder": "Введите тему"
       },
       "email": {
         "label": "Электронная почта",
-        "placeholder": "example@domain.com"
+        "placeholder": "Введите ваш email"
       },
       "message": {
-        "label": "Ваше сообщение",
-        "placeholder": "Оставьте комментарий..."
+        "label": "Сообщение",
+        "placeholder": "Введите ваше сообщение"
       },
       "button": {
         "send": "Отправить сообщение",
-        "sending": "Отправка..."
+        "sending": "Отправляется..."
       }
     },
     "termsText": "Отправляя эту форму, вы соглашаетесь с {terms} и {privacy}.",
-    "terms": "условиями и положениями",
-    "privacy": "политикой конфиденциальности"
+    "terms": "Условия использования",
+    "privacy": "Политика конфиденциальности"
   },
   "ContactInfo": {
     "address": {

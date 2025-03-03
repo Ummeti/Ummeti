@@ -96,14 +96,14 @@ export default function Contact() {
             </div>
             <p className="text-gray-500 text-sm">
               {t.rich('termsText', {
-                terms: (chunks) => (
-                  <Link href="#" className="text-main">
-                    {chunks}
+                terms: (
+                  <Link key="terms" href="#" className="text-main">
+                    {t('terms')}
                   </Link>
                 ),
-                privacy: (chunks) => (
-                  <Link href="#" className="text-main">
-                    {chunks}
+                privacy: (
+                  <Link key="privacy" href="#" className="text-main">
+                    {t('privacy')}
                   </Link>
                 ),
               })}

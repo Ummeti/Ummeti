@@ -64,7 +64,11 @@
     }
   },
   "ProjectsSection": {
-    "title": "Projects"
+    "title": "Projects",
+    "projectCard": {
+      "goal": "Goal",
+      "button": "Donate"
+    }
   },
   "VolunteerSection": {
     "title": "Volunteer Now",
@@ -84,6 +88,15 @@
   "ProjectsPage": {
     "title": "Projects",
     "allTab": "All"
+  },
+  "DonationForm": {
+    "fullName": "Full name",
+    "email": "Email",
+    "amount": "Amount to donate",
+    "cardNumber": "Card number",
+    "expirationDate": "Expiration date",
+    "securityCode": "Security code",
+    "donateNow": "Donate Now"
   },
   "AboutPage": {
     "title": "About Ummeti",
@@ -116,32 +129,32 @@
   },
   "ContactPage": {
     "title": "Contact Us",
-    "description": "We use an agile approach to test assumptions and connect with the needs of your audience early and often.",
+    "description": "Get in touch with us for any inquiries or support.",
     "form": {
       "name": {
         "label": "Name",
-        "placeholder": "John Doe"
+        "placeholder": "Enter your name"
       },
       "subject": {
         "label": "Subject",
-        "placeholder": "Inquiry about..."
+        "placeholder": "Enter the subject"
       },
       "email": {
         "label": "Email",
-        "placeholder": "example@domain.com"
+        "placeholder": "Enter your email"
       },
       "message": {
-        "label": "Your message",
-        "placeholder": "Leave a comment..."
+        "label": "Message",
+        "placeholder": "Enter your message"
       },
       "button": {
         "send": "Send Message",
         "sending": "Sending..."
       }
     },
-    "termsText": "By submitting this form you agree to our {terms} and our {privacy}.",
-    "terms": "terms and conditions",
-    "privacy": "privacy policy"
+    "termsText": "By submitting this form, you agree to our {terms} and {privacy}.",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
   },
   "ContactInfo": {
     "address": {

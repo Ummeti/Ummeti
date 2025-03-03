@@ -1,4 +1,5 @@
 'use client';
+import { useEffect, useState } from 'react';
 import { DotButton, useDotButton } from './EmblaCarouselDotButton';
 import {
   PrevButton,
@@ -8,7 +9,28 @@ import {
 import useEmblaCarousel from 'embla-carousel-react';
 
 const EmblaCarousel = ({ children }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ align: 'start', loop: true });
+  const [direction, setDirection] = useState('ltr');
+
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    align: 'start',
+    loop: true,
+    direction,
+  });
+
+  useEffect(() => {
+    setDirection(document.dir);
+
+    const observer = new MutationObserver(() => {
+      setDirection(document.dir);
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['dir'],
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi);

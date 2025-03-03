@@ -4,10 +4,7 @@ import Link from 'next/link';
 export default function MobileNav() {
   return (
     <div className="flex md:hidden flex-col items-center w-16 h-full overflow-hidden text-gray-700">
-      <Link
-        className="flex items-center justify-center py-2.5"
-        href="/dashboard"
-      >
+      <Link className="flex items-center justify-center py-2.5" href="/">
         <Image src="/logo.webp" alt="Ummati" width={48} height={48} />
       </Link>
       <ul className="flex flex-col items-center px-2 space-y-2 border-t border-gray-200">

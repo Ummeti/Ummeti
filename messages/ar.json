@@ -64,7 +64,11 @@
     }
   },
   "ProjectsSection": {
-    "title": "المشاريع"
+    "title": "المشاريع",
+    "projectCard": {
+      "goal": "الهدف",
+      "button": "تبرع"
+    }
   },
   "VolunteerSection": {
     "title": "تطوع الآن",
@@ -84,6 +88,15 @@
   "ProjectsPage": {
     "title": "المشاريع",
     "allTab": "الكل"
+  },
+  "DonationForm": {
+    "fullName": "الاسم الكامل",
+    "email": "البريد الإلكتروني",
+    "amount": "المبلغ المراد التبرع به",
+    "cardNumber": "رقم البطاقة",
+    "expirationDate": "تاريخ الانتهاء",
+    "securityCode": "رمز الأمان",
+    "donateNow": "تبرع الآن"
   },
   "AboutPage": {
     "title": "عن أمتي",
@@ -116,23 +129,23 @@
   },
   "ContactPage": {
     "title": "اتصل بنا",
-    "description": "نستخدم نهجًا مرنًا لاختبار الافتراضات والتواصل مع احتياجات جمهورك في وقت مبكر وبشكل متكرر.",
+    "description": "تواصل معنا لأي استفسارات أو دعم.",
     "form": {
       "name": {
         "label": "الاسم",
-        "placeholder": "محمد أحمد"
+        "placeholder": "أدخل اسمك"
       },
       "subject": {
         "label": "الموضوع",
-        "placeholder": "استفسار حول..."
+        "placeholder": "أدخل الموضوع"
       },
       "email": {
         "label": "البريد الإلكتروني",
-        "placeholder": "example@domain.com"
+        "placeholder": "أدخل بريدك الإلكتروني"
       },
       "message": {
-        "label": "رسالتك",
-        "placeholder": "اترك تعليقًا..."
+        "label": "الرسالة",
+        "placeholder": "أدخل رسالتك"
       },
       "button": {
         "send": "إرسال الرسالة",
@@ -140,7 +153,7 @@
       }
     },
     "termsText": "بإرسال هذا النموذج، فإنك توافق على {terms} و {privacy}.",
-    "terms": "الشروط والأحكام",
+    "terms": "شروط الخدمة",
     "privacy": "سياسة الخصوصية"
   },
   "ContactInfo": {

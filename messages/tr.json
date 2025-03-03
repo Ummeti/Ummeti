@@ -64,7 +64,11 @@
     }
   },
   "ProjectsSection": {
-    "title": "Projeler"
+    "title": "Projeler",
+    "projectCard": {
+      "goal": "Hedef",
+      "button": "Bağış Yap"
+    }
   },
   "VolunteerSection": {
     "title": "Şimdi Gönüllü Ol",
@@ -84,6 +88,15 @@
   "ProjectsPage": {
     "title": "Projeler",
     "allTab": "Tümü"
+  },
+  "DonationForm": {
+    "fullName": "Tam ad",
+    "email": "E-posta",
+    "amount": "Bağış miktarı",
+    "cardNumber": "Kart numarası",
+    "expirationDate": "Son kullanma tarihi",
+    "securityCode": "Güvenlik kodu",
+    "donateNow": "Şimdi Bağış Yap"
   },
   "AboutPage": {
     "title": "Ummeti Hakkında",
@@ -116,32 +129,32 @@
   },
   "ContactPage": {
     "title": "Bize Ulaşın",
-    "description": "Varsayımları test etmek ve kitlenizin ihtiyaçlarıyla erken ve sık bağlantı kurmak için çevik bir yaklaşım kullanıyoruz.",
+    "description": "Herhangi bir soru veya destek için bizimle iletişime geçin.",
     "form": {
       "name": {
-        "label": "İsim",
-        "placeholder": "Ahmet Yılmaz"
+        "label": "Ad",
+        "placeholder": "Adınızı girin"
       },
       "subject": {
         "label": "Konu",
-        "placeholder": "Hakkında sorgulama..."
+        "placeholder": "Konu girin"
       },
       "email": {
         "label": "E-posta",
-        "placeholder": "ornek@domain.com"
+        "placeholder": "E-posta adresinizi girin"
       },
       "message": {
-        "label": "Mesajınız",
-        "placeholder": "Yorum bırakın..."
+        "label": "Mesaj",
+        "placeholder": "Mesajınızı girin"
       },
       "button": {
-        "send": "Mesaj Gönder",
+        "send": "Mesajı Gönder",
         "sending": "Gönderiliyor..."
       }
     },
-    "termsText": "Bu formu göndererek {terms} ve {privacy} kabul etmiş olursunuz.",
-    "terms": "şartlar ve koşullar",
-    "privacy": "gizlilik politikası"
+    "termsText": "Bu formu göndererek, {terms} ve {privacy} ile ilgili şartları kabul etmiş olursunuz.",
+    "terms": "Hizmet Şartları",
+    "privacy": "Gizlilik Politikası"
   },
   "ContactInfo": {
     "address": {

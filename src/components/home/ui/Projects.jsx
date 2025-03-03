@@ -2,7 +2,7 @@
 import EmblaCarousel from '@/components/widgets/carousel/EmblaCarousel';
 import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
-import { useTranslations } from 'use-intl';
+import { useTranslations } from 'next-intl';
 
 export default function Projects({ projects }) {
   const t = useTranslations('ProjectsSection');

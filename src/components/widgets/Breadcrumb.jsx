@@ -44,7 +44,7 @@ export default function Breadcrumb() {
         {cleanedSegments.map((segment, index) => {
           const isLast = index === cleanedSegments.length - 1;
           const href = '/' + cleanedSegments.slice(0, index + 1).join('/');
-          const decodedSegment = decodeURIComponent(segment).replace(/-/g, ' '); // Show raw segment, decoded
+          const decodedSegment = decodeURIComponent(segment).replace(/-/g, ' ');
 
           return (
             <li key={href} className="relative flex items-center">

@@ -3,12 +3,12 @@ import ProgressBar from '@/components/widgets/ProgressBar';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useTranslations } from 'use-intl';
+import { useTranslations } from 'next-intl';
 
 export default function ProjectCard({
   project: { title, description, raised, goal, slug, images },
 }) {
-  const t = useTranslations('Header');
+  const t = useTranslations('ProjectsSection');
   return (
     <motion.div
       className="bg-second-lightest h-full rounded-lg shadow-sm overflow-hidden"
@@ -34,7 +34,7 @@ export default function ProjectCard({
           href={`/projects/${slug}`}
           className="block w-fit rounded-lg px-4 py-2 rtl:mr-auto uppercase bg-main hover:bg-main-light duration-300 text-white font-bold"
         >
-          {t('Donate')}
+          {t('projectCard.button')}
         </Link>
       </div>
     </motion.div>
