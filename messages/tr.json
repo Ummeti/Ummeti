@@ -151,10 +151,7 @@
         "send": "Mesajı Gönder",
         "sending": "Gönderiliyor..."
       }
-    },
-    "termsText": "Bu formu göndererek, {terms} ve {privacy} ile ilgili şartları kabul etmiş olursunuz.",
-    "terms": "Hizmet Şartları",
-    "privacy": "Gizlilik Politikası"
+    }
   },
   "ContactInfo": {
     "address": {

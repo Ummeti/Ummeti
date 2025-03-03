@@ -94,20 +94,6 @@ export default function Contact() {
                 <p className="text-red-500 text-sm">{state.errors.message}</p>
               )}
             </div>
-            <p className="text-gray-500 text-sm">
-              {t.rich('termsText', {
-                terms: (
-                  <Link key="terms" href="#" className="text-main">
-                    {t('terms')}
-                  </Link>
-                ),
-                privacy: (
-                  <Link key="privacy" href="#" className="text-main">
-                    {t('privacy')}
-                  </Link>
-                ),
-              })}
-            </p>
             <button
               type="submit"
               className="w-full bg-main text-white py-3 rounded-lg font-bold hover:bg-main-light transition disabled:bg-main-lightest"

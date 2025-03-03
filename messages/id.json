@@ -152,10 +152,7 @@
         "send": "Kirim Pesan",
         "sending": "Mengirim..."
       }
-    },
-    "termsText": "Dengan mengirimkan formulir ini, Anda setuju dengan {terms} dan {privacy}.",
-    "terms": "Syarat Layanan",
-    "privacy": "Kebijakan Privasi"
+    }
   },
   "ContactInfo": {
     "address": {
