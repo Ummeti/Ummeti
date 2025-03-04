@@ -6,12 +6,12 @@
     }
   },
   "Header": {
-    "Home": "Beranda",
-    "About": "Tentang",
-    "Projects": "Proyek",
-    "Blog": "Blog",
-    "Contact": "Kontak",
-    "Donate": "Donasi"
+    "home": "Beranda",
+    "about": "Tentang",
+    "projects": "Proyek",
+    "blog": "Blog",
+    "contact": "Kontak",
+    "donate": "Donasi"
   },
   "HeroSection": {
     "title": "Jadilah tangan yang membantu",
@@ -23,7 +23,7 @@
     "supporters": "Pendukung",
     "served": "Orang yang dibantu",
     "ctaTitle": "Jadilah Bagian dari Perubahan",
-    "ctaLink": "jadi relawan"
+    "ctaLink": "Jadi relawan"
   },
   "AboutSection": {
     "title": "Siapa kami?",
@@ -98,7 +98,6 @@
     "securityCode": "Kode keamanan",
     "donateNow": "Donasi Sekarang"
   },
-
   "AboutPage": {
     "title": "Tentang Ummeti",
     "description": "Ummeti adalah organisasi global yang bertujuan mendukung isu-isu umat Islam dan memperjuangkan perjuangan Palestina.",
@@ -168,34 +167,34 @@
       "value": "info@ummeti.org"
     }
   },
-  "Socials": {
+  "socials": {
     "title": "Ikuti Kami"
   },
   "Footer": {
-    "Description": "Ummeti adalah organisasi global yang bertujuan mendukung isu-isu umat Islam dan memperjuangkan perjuangan Palestina.",
-    "AboutUs": "Tentang Kami",
-    "AboutUsItems": {
-      "VolunteerNow": "Jadi Relawan Sekarang",
-      "Story": "Kisah Kami",
-      "Projects": "Proyek"
+    "description": "Ummeti adalah organisasi global yang bertujuan mendukung isu-isu umat Islam dan memperjuangkan perjuangan Palestina.",
+    "aboutUs": "Tentang Kami",
+    "aboutUsItems": {
+      "volunteerNow": "Jadi Relawan Sekarang",
+      "story": "Kisah Kami",
+      "projects": "Proyek"
     },
-    "Resources": "Sumber Daya",
-    "ResourcesItems": {
-      "Donors": "Donatur",
-      "Community": "Komunitas",
-      "Events": "Acara"
+    "resources": "Sumber Daya",
+    "resourcesItems": {
+      "donors": "Donatur",
+      "community": "Komunitas",
+      "events": "Acara"
     },
-    "HelpfulLinks": "Tautan Berguna",
-    "HelpfulLinksItems": {
-      "FAQs": "FAQs",
-      "Contact": "Kontak",
-      "Projects": "Proyek"
+    "helpfulLinks": "Tautan Berguna",
+    "helpfulLinksItems": {
+      "faqs": "FAQs",
+      "contact": "Kontak",
+      "projects": "Proyek"
     },
-    "ContactUs": "Hubungi Kami",
-    "Legal": {
-      "AllRightsReserved": "Seluruh hak cipta dilindungi.",
-      "TermsAndConditions": "Syarat & Ketentuan",
-      "PrivacyPolicy": "Kebijakan Privasi"
+    "contactUs": "Hubungi Kami",
+    "legal": {
+      "allRightsReserved": "Seluruh hak cipta dilindungi.",
+      "termsAndConditions": "Syarat & Ketentuan",
+      "privacyPolicy": "Kebijakan Privasi"
     }
   }
 }

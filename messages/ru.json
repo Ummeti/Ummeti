@@ -6,12 +6,12 @@
     }
   },
   "Header": {
-    "Home": "Главная",
-    "About": "О нас",
-    "Projects": "Проекты",
-    "Blog": "Блог",
-    "Contact": "Контакты",
-    "Donate": "Пожертвовать"
+    "home": "Главная",
+    "about": "О нас",
+    "projects": "Проекты",
+    "blog": "Блог",
+    "contact": "Контакты",
+    "donate": "Пожертвовать"
   },
   "HeroSection": {
     "title": "Будьте протянутой рукой помощи",
@@ -23,7 +23,7 @@
     "supporters": "Поддержка",
     "served": "Людей получили помощь",
     "ctaTitle": "Станьте частью перемен",
-    "ctaLink": "стать волонтером"
+    "ctaLink": "Стать волонтером"
   },
   "AboutSection": {
     "title": "Кто мы?",
@@ -167,34 +167,34 @@
       "value": "info@ummeti.org"
     }
   },
-  "Socials": {
+  "socials": {
     "title": "Подписывайтесь на нас"
   },
   "Footer": {
-    "Description": "Ummeti – это международная организация, поддерживающая вопросы исламской общины и выступающая за дело Палестины.",
-    "AboutUs": "О нас",
-    "AboutUsItems": {
-      "VolunteerNow": "Стать волонтером",
-      "Story": "Наша история",
-      "Projects": "Проекты"
+    "description": "Ummeti – это международная организация, поддерживающая вопросы исламской общины и выступающая за дело Палестины.",
+    "aboutUs": "О нас",
+    "aboutUsItems": {
+      "volunteerNow": "Стать волонтером",
+      "story": "Наша история",
+      "projects": "Проекты"
     },
-    "Resources": "Ресурсы",
-    "ResourcesItems": {
-      "Donors": "Жертвователи",
-      "Community": "Сообщество",
-      "Events": "События"
+    "resources": "Ресурсы",
+    "resourcesItems": {
+      "donors": "Жертвователи",
+      "community": "Сообщество",
+      "events": "События"
     },
-    "HelpfulLinks": "Полезные ссылки",
-    "HelpfulLinksItems": {
-      "FAQs": "Часто задаваемые вопросы",
-      "Contact": "Контакты",
-      "Projects": "Проекты"
+    "helpfulLinks": "Полезные ссылки",
+    "helpfulLinksItems": {
+      "faqs": "Часто задаваемые вопросы",
+      "contact": "Контакты",
+      "projects": "Проекты"
     },
-    "ContactUs": "Свяжитесь с нами",
-    "Legal": {
-      "AllRightsReserved": "Все права защищены.",
-      "TermsAndConditions": "Условия и положения",
-      "PrivacyPolicy": "Политика конфиденциальности"
+    "contactUs": "Свяжитесь с нами",
+    "legal": {
+      "allRightsReserved": "Все права защищены.",
+      "termsAndConditions": "Условия и положения",
+      "privacyPolicy": "Политика конфиденциальности"
     }
   }
 }

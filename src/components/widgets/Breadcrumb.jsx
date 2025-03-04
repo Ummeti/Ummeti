@@ -3,8 +3,10 @@
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { usePathname } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
 
 export default function Breadcrumb() {
+  const t = useTranslations('Header');
   const pathname = usePathname();
 
   const pathSegments = pathname.split('/').filter((segment) => segment);
@@ -38,7 +40,9 @@ export default function Breadcrumb() {
                 d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
               />
             </svg>
-            <span className="ms-1.5 text-xs font-medium uppercase">Home</span>
+            <span className="ms-1.5 text-xs font-medium uppercase">
+              {t('home')}
+            </span>
           </Link>
         </li>
         {cleanedSegments.map((segment, index) => {

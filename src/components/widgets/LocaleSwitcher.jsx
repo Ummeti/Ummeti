@@ -55,7 +55,7 @@ export default function LocaleDropdown() {
       </button>
 
       {isOpen && (
-        <div className="absolute left-0 mt-2 w-32 bg-white border rounded-lg shadow-lg z-10">
+        <div className="absolute left-0 mt-2 w-32 bg-white border rounded-lg shadow-lg z-10 overflow-hidden">
           {routing.locales.map((locale) => (
             <button
               key={locale}

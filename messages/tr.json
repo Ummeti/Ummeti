@@ -6,12 +6,12 @@
     }
   },
   "Header": {
-    "Home": "Ana Sayfa",
-    "About": "Hakkımızda",
-    "Projects": "Projeler",
-    "Blog": "Blog",
-    "Contact": "İletişim",
-    "Donate": "Bağış Yap"
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "projects": "Projeler",
+    "blog": "Blog",
+    "contact": "İletişim",
+    "donate": "Bağış Yap"
   },
   "HeroSection": {
     "title": "Şimdi yardım eli ol",
@@ -23,7 +23,7 @@
     "supporters": "Destekçiler",
     "served": "Faydalananlar",
     "ctaTitle": "Değişimin Bir Parçası Ol",
-    "ctaLink": "gönüllü ol"
+    "ctaLink": "Gönüllü ol"
   },
   "AboutSection": {
     "title": "Biz kimiz?",
@@ -167,34 +167,34 @@
       "value": "info@ummeti.org"
     }
   },
-  "Socials": {
+  "socials": {
     "title": "Bizi Takip Edin"
   },
   "Footer": {
-    "Description": "Ummeti, İslam milletinin sorunlarını desteklemeyi ve Filistin davasını savunmayı amaçlayan küresel bir organizasyondur.",
-    "AboutUs": "Hakkımızda",
-    "AboutUsItems": {
-      "VolunteerNow": "Şimdi Gönüllü Ol",
-      "Story": "Hikaye",
-      "Projects": "Projeler"
+    "description": "Ummeti, İslam milletinin sorunlarını desteklemeyi ve Filistin davasını savunmayı amaçlayan küresel bir organizasyondur.",
+    "aboutUs": "Hakkımızda",
+    "aboutUsItems": {
+      "volunteerNow": "Şimdi Gönüllü Ol",
+      "story": "Hikaye",
+      "projects": "Projeler"
     },
-    "Resources": "Kaynaklar",
-    "ResourcesItems": {
-      "Donors": "Bağışçılar",
-      "Community": "Topluluk",
-      "Events": "Etkinlikler"
+    "resources": "Kaynaklar",
+    "resourcesItems": {
+      "donors": "Bağışçılar",
+      "community": "Topluluk",
+      "events": "Etkinlikler"
     },
-    "HelpfulLinks": "Yararlı Bağlantılar",
-    "HelpfulLinksItems": {
-      "FAQs": "SSS",
-      "Contact": "İletişim",
-      "Projects": "Projeler"
+    "helpfulLinks": "Yararlı Bağlantılar",
+    "helpfulLinksItems": {
+      "faqs": "SSS",
+      "contact": "İletişim",
+      "projects": "Projeler"
     },
-    "ContactUs": "Bize Ulaşın",
-    "Legal": {
-      "AllRightsReserved": "Tüm hakları saklıdır.",
-      "TermsAndConditions": "Şartlar ve Koşullar",
-      "PrivacyPolicy": "Gizlilik Politikası"
+    "contactUs": "Bize Ulaşın",
+    "legal": {
+      "allRightsReserved": "Tüm hakları saklıdır.",
+      "termsAndConditions": "Şartlar ve Koşullar",
+      "privacyPolicy": "Gizlilik Politikası"
     }
   }
 }

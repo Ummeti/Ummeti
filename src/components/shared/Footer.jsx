@@ -20,21 +20,21 @@ export default function Footer() {
               <Image src="/logo-2.webp" alt="Ummati" width={100} height={100} />
             </Link>
             <p className="mt-6 max-w-md text-center leading-relaxed text-gray-100 sm:max-w-xs sm:text-left">
-              {t('Description')}
+              {t('description')}
             </p>
             <Socials color="text-white" />
           </div>
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-white">{t('AboutUs')}</p>
+              <p className="text-lg font-medium text-white">{t('aboutUs')}</p>
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
                   <Link
                     className="text-white transition hover:text-white/75"
                     href="/#volunteer"
                   >
-                    {t('AboutUsItems.VolunteerNow')}
+                    {t('aboutUsItems.volunteerNow')}
                   </Link>
                 </li>
                 <li>
@@ -42,7 +42,7 @@ export default function Footer() {
                     className="text-white transition hover:text-white/75"
                     href="#"
                   >
-                    {t('AboutUsItems.Story')}
+                    {t('aboutUsItems.story')}
                   </Link>
                 </li>
                 <li>
@@ -50,21 +50,21 @@ export default function Footer() {
                     className="text-white transition hover:text-white/75"
                     href="/projects"
                   >
-                    {t('AboutUsItems.Projects')}
+                    {t('aboutUsItems.projects')}
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-white">{t('Resources')}</p>
+              <p className="text-lg font-medium text-white">{t('resources')}</p>
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
                   <Link
                     className="text-white transition hover:text-white/75"
                     href="#"
                   >
-                    {t('ResourcesItems.Donors')}
+                    {t('resourcesItems.donors')}
                   </Link>
                 </li>
                 <li>
@@ -72,7 +72,7 @@ export default function Footer() {
                     className="text-white transition hover:text-white/75"
                     href="#"
                   >
-                    {t('ResourcesItems.Community')}
+                    {t('resourcesItems.community')}
                   </Link>
                 </li>
                 <li>
@@ -80,7 +80,7 @@ export default function Footer() {
                     className="text-white transition hover:text-white/75"
                     href="#"
                   >
-                    {t('ResourcesItems.Events')}
+                    {t('resourcesItems.events')}
                   </Link>
                 </li>
               </ul>
@@ -88,7 +88,7 @@ export default function Footer() {
 
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium text-white">
-                {t('HelpfulLinks')}
+                {t('helpfulLinks')}
               </p>
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
@@ -96,7 +96,7 @@ export default function Footer() {
                     className="text-white transition hover:text-white/75"
                     href="#"
                   >
-                    {t('HelpfulLinksItems.FAQs')}
+                    {t('helpfulLinksItems.faqs')}
                   </Link>
                 </li>
                 <li>
@@ -104,7 +104,7 @@ export default function Footer() {
                     className="text-white transition hover:text-white/75"
                     href="/contact"
                   >
-                    {t('HelpfulLinksItems.Contact')}
+                    {t('helpfulLinksItems.contact')}
                   </Link>
                 </li>
                 <li>
@@ -112,14 +112,14 @@ export default function Footer() {
                     className="text-white transition hover:text-white/75"
                     href="/projects"
                   >
-                    {t('HelpfulLinksItems.Projects')}
+                    {t('helpfulLinksItems.projects')}
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-white">{t('ContactUs')}</p>
+              <p className="text-lg font-medium text-white">{t('contactUs')}</p>
               <ContactInfo color="text-white" />
             </div>
           </div>
@@ -129,20 +129,20 @@ export default function Footer() {
           <div className="text-center sm:flex sm:justify-between sm:text-left">
             <div className="text-sm text-gray-100">
               <span className="block sm:inline">
-                {t('Legal.AllRightsReserved')}{' '}
+                {t('legal.allRightsReserved')}{' '}
               </span>
               <Link
                 className="inline-block text-white underline transition hover:text-white/75"
                 href="#"
               >
-                {t('Legal.TermsAndConditions')}
+                {t('legal.termsAndConditions')}
               </Link>
               <span> · </span>
               <Link
                 className="inline-block text-white underline transition hover:text-white/75"
                 href="#"
               >
-                {t('Legal.PrivacyPolicy')}
+                {t('legal.privacyPolicy')}
               </Link>
             </div>
             <p className="mt-4 text-sm text-white sm:order-first sm:mt-0">

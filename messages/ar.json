@@ -6,12 +6,12 @@
     }
   },
   "Header": {
-    "Home": "الرئيسية",
-    "About": "من نحن",
-    "Projects": "المشاريع",
-    "Blog": "المدونة",
-    "Contact": "اتصل بنا",
-    "Donate": "تبرع"
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "projects": "المشاريع",
+    "blog": "المدونة",
+    "contact": "اتصل بنا",
+    "donate": "تبرع"
   },
   "HeroSection": {
     "title": "كن عوناً",
@@ -167,34 +167,34 @@
       "value": "info@ummati.org"
     }
   },
-  "Socials": {
+  "socials": {
     "title": "تابعنا"
   },
   "Footer": {
-    "Description": "أمتي هي منظمة عالمية تهدف إلى دعم قضايا الأمة الإسلامية والدفاع عن القضية الفلسطينية.",
-    "AboutUs": "من نحن",
-    "AboutUsItems": {
-      "VolunteerNow": "تطوع الآن",
-      "Story": "القصة",
-      "Projects": "المشاريع"
+    "description": "أمتي هي منظمة عالمية تهدف إلى دعم قضايا الأمة الإسلامية والدفاع عن القضية الفلسطينية.",
+    "aboutUs": "من نحن",
+    "aboutUsItems": {
+      "volunteerNow": "تطوع الآن",
+      "story": "القصة",
+      "projects": "المشاريع"
     },
-    "Resources": "الموارد",
-    "ResourcesItems": {
-      "Donors": "المتبرعون",
-      "Community": "المجتمع",
-      "Events": "الفعاليات"
+    "resources": "الموارد",
+    "resourcesItems": {
+      "donors": "المتبرعون",
+      "community": "المجتمع",
+      "events": "الفعاليات"
     },
-    "HelpfulLinks": "روابط مفيدة",
-    "HelpfulLinksItems": {
-      "FAQs": "الأسئلة الشائعة",
-      "Contact": "اتصل بنا",
-      "Projects": "المشاريع"
+    "helpfulLinks": "روابط مفيدة",
+    "helpfulLinksItems": {
+      "faqs": "الأسئلة الشائعة",
+      "contact": "اتصل بنا",
+      "projects": "المشاريع"
     },
-    "ContactUs": "اتصل بنا",
-    "Legal": {
-      "AllRightsReserved": "جميع الحقوق محفوظة.",
-      "TermsAndConditions": "الشروط والأحكام",
-      "PrivacyPolicy": "سياسة الخصوصية"
+    "contactUs": "اتصل بنا",
+    "legal": {
+      "allRightsReserved": "جميع الحقوق محفوظة.",
+      "termsAndConditions": "الشروط والأحكام",
+      "privacyPolicy": "سياسة الخصوصية"
     }
   }
 }

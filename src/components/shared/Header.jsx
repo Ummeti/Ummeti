@@ -12,11 +12,11 @@ export default function Header() {
   const t = useTranslations('Header');
 
   const menuItems = [
-    { label: t('Home'), href: '/' },
-    { label: t('About'), href: '/about' },
-    { label: t('Projects'), href: '/projects' },
-    { label: t('Blog'), href: '/#blog' },
-    { label: t('Contact'), href: '/contact' },
+    { label: t('home'), href: '/' },
+    { label: t('about'), href: '/about' },
+    { label: t('projects'), href: '/projects' },
+    { label: t('blog'), href: '/#blog' },
+    { label: t('contact'), href: '/contact' },
   ];
 
   return (
@@ -48,7 +48,7 @@ export default function Header() {
             href="/projects"
             className="hidden lg:block rounded-full px-4 py-2 uppercase border duration-300 bg-main hover:bg-white text-white hover:text-gray-900 hover:scale-105 font-bold shadow-lg"
           >
-            {t('Donate')}
+            {t('donate')}
           </Link>
           <LocaleSwitcher />
         </nav>

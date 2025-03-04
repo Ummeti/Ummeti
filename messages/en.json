@@ -6,12 +6,12 @@
     }
   },
   "Header": {
-    "Home": "Home",
-    "About": "About",
-    "Projects": "Projects",
-    "Blog": "Blog",
-    "Contact": "Contact",
-    "Donate": "Donate"
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact",
+    "donate": "Donate"
   },
   "HeroSection": {
     "title": "Be a helping hand",
@@ -23,7 +23,7 @@
     "supporters": "Supporters",
     "served": "People served",
     "ctaTitle": "Be Part of the Change",
-    "ctaLink": "become volunteer"
+    "ctaLink": "Become volunteer"
   },
   "AboutSection": {
     "title": "Who are we?",
@@ -167,34 +167,34 @@
       "value": "info@ummeti.org"
     }
   },
-  "Socials": {
+  "socials": {
     "title": "Follow Us"
   },
   "Footer": {
-    "Description": "Ummeti is a global organization aimed at supporting the issues of the Islamic nation and advocating for the Palestinian cause.",
-    "AboutUs": "About Us",
-    "AboutUsItems": {
-      "VolunteerNow": "Volunteer Now",
-      "Story": "Story",
-      "Projects": "Projects"
+    "description": "Ummeti is a global organization aimed at supporting the issues of the Islamic nation and advocating for the Palestinian cause.",
+    "aboutUs": "About Us",
+    "aboutUsItems": {
+      "volunteerNow": "Volunteer Now",
+      "story": "Story",
+      "projects": "Projects"
     },
-    "Resources": "Resources",
-    "ResourcesItems": {
-      "Donors": "Donors",
-      "Community": "Community",
-      "Events": "Events"
+    "resources": "Resources",
+    "resourcesItems": {
+      "donors": "Donors",
+      "community": "Community",
+      "events": "Events"
     },
-    "HelpfulLinks": "Helpful Links",
-    "HelpfulLinksItems": {
-      "FAQs": "FAQs",
-      "Contact": "Contact",
-      "Projects": "Projects"
+    "helpfulLinks": "Helpful Links",
+    "helpfulLinksItems": {
+      "faqs": "FAQs",
+      "contact": "Contact",
+      "projects": "Projects"
     },
-    "ContactUs": "Contact Us",
-    "Legal": {
-      "AllRightsReserved": "All rights reserved.",
-      "TermsAndConditions": "Terms & Conditions",
-      "PrivacyPolicy": "Privacy Policy"
+    "contactUs": "Contact Us",
+    "legal": {
+      "allRightsReserved": "All rights reserved.",
+      "termsAndConditions": "Terms & Conditions",
+      "privacyPolicy": "Privacy Policy"
     }
   }
 }
