@@ -4,7 +4,6 @@ import { sendEmailAction } from '@/app/actions/sendEmail';
 import Breadcrumb from '@/components/widgets/Breadcrumb';
 import ContactInfo from '@/components/widgets/ContactInfo';
 import Socials from '@/components/widgets/Socials';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 export default function Contact() {
