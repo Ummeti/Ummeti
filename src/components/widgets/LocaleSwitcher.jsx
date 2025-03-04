@@ -1,10 +1,9 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
-import { useRouter } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
 import { useLocale } from 'next-intl';
 import { useTransition, useState } from 'react';
+import { usePathname, useRouter } from '@/i18n/navigation';
 import {
   ArFlagIcon,
   EnFlagIcon,
@@ -31,9 +30,7 @@ export default function LocaleDropdown() {
   const switchLocale = (newLocale) => {
     if (newLocale !== currentLocale) {
       startTransition(() => {
-        const pathWithoutLocale = pathname.replace(/^\/[^\/]+/, '') || '/';
-
-        router.push(pathWithoutLocale, { locale: newLocale });
+        router.push(pathname, { locale: newLocale });
         setIsOpen(false);
       });
     }

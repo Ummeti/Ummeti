@@ -1,8 +1,8 @@
 'use client';
 
+import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname } from '@/i18n/navigation';
 
 export default function Breadcrumb() {
   const pathname = usePathname();
