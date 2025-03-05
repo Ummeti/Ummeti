@@ -9,22 +9,9 @@ export default function CloseIcon() {
       viewBox="0 0 24 24"
     >
       <path
-        fill="none"
-        stroke="currentColor"
-        strokeDasharray={12}
-        strokeDashoffset={12}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M12 12l7 7M12 12l-7 -7M12 12l-7 7M12 12l7 -7"
-      >
-        <animate
-          fill="freeze"
-          attributeName="stroke-dashoffset"
-          dur="0.3s"
-          values="12;0"
-        ></animate>
-      </path>
+        fill="currentColor"
+        d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+      />
     </svg>
   );
 }

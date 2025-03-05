@@ -57,7 +57,7 @@ export default function Header() {
             {menuOpen ? <CloseIcon /> : <MenuIcon />}
           </button>
           {menuOpen && (
-            <nav className="absolute z-50 top-24 right-4 bg-white shadow-lg p-4 rounded-lg">
+            <nav className="absolute z-50 top-24 rtl:left-4 ltr:right-4 bg-white shadow-lg p-4 rounded-lg">
               {menuItems.map((item) => (
                 <Link
                   key={item.label}
