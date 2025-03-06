@@ -8,7 +8,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'ummeti.s3.eu-central-1.amazonaws.com',
+        hostname: 'ummati.s3.eu-central-1.amazonaws.com',
         port: '',
         pathname: '/**',
       },
